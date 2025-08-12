@@ -1,0 +1,17 @@
+
+.hero {
+  position: relative;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: absolute;
+  bottom: 2rem;   /* distancia do rodapé da tela */
+  right: 2rem;    /* distancia da borda direita */
+  display: flex;  /* se quiser alinhar mais itens juntos */
+  gap: 1rem;
+}
