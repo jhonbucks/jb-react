@@ -13,6 +13,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="w-full bg-white">
+      <div></div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav className="flex h-16 items-center justify-between">
           <a href="#" className="font-semibold tracking-[0.3em] text-gray-900">
