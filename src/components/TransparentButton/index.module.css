@@ -1,0 +1,21 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 28px;
+	background: transparent;
+	border: 2px solid currentColor;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-weight: 600;
+	line-height: 1;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+	transform: scale(1.05); /* aumenta levemente no hover */
+	opacity: 0.9;
+}

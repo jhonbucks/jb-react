@@ -1,0 +1,55 @@
+/* FancyButton.css - sem sombra */
+.fbtn {
+	--bg: #4A708B;
+	--bg-hover: #4A708B;
+	--text: #ffffff;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	padding: 12px 28px;
+	text-decoration: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	line-height: 1;
+
+	background: #4A708B;
+	color: var(--text);
+	border: 2px solid transparent;
+
+	transition: transform 0.18s ease, background-color 0.18s ease;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.fbtn:hover {
+	transform: scale(1.06);
+	background: #4A708B;
+	color: var(--text);
+}
+
+.fbtn:focus-visible {
+	outline: 0;
+}
+
+.fbtn.block {
+	display: flex;
+	width: 100%;
+}
+
+.fbtn.secondary {
+	--bg: #A7C3D4;
+	--bg-hover: #89AFC1;
+	--text: #4A708B;
+
+	background: var(--bg);
+	color: var(--text);
+}
+
+.fbtn.secondary:hover {
+	background: var(--bg-hover);
+	color: var(--text);
+}

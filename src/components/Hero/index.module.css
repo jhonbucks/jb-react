@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* só mexe a posição do bg; nada escala */
+  animation: panBg 20s ease-in-out infinite alternate;
+}
+
+@keyframes panBg {
+  0%   { background-position: 50% 50%; }
+  50%  { background-position: 50% 40%; }
+  100% { background-position: 50% 50%; }
+}
+
+/* imagem central estática e responsiva, acima do fundo */
+.hero-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: clamp(220px, var(--hero-center-w, 50vw), 900px);
+  height: auto;
+  pointer-events: none; /* não bloqueia clique do botão */
+  display: block;
+}
+
+/* o botão continua onde sempre esteve */
+.hero-inner {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;          /* acima da img central */
+  white-space: nowrap; /* evita “SAIBA / MAIS” quebrar */
+}

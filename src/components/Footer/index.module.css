@@ -1,0 +1,50 @@
+/* src/components/Footer/index.module.css */
+.footer {
+	width: 100%;
+	background-color: #4d76a5;
+	overflow-x: hidden;
+}
+
+.footerInner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.socialList {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	padding: 0;
+	max-width: 100%;
+}
+
+.socialList a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 1.25rem;
+	transition: background 0.3s;
+	box-sizing: border-box;
+}
+
+.socialList a:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.rights {
+	font-size: 0.875rem;
+	opacity: 0.9;
+	word-break: break-word;
+}
