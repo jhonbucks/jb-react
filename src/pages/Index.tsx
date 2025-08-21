@@ -23,19 +23,32 @@ export default function Index() {
         href="#"
         buttonText="Ver detalhes"
         alt="Banner Noah"
-        animationDurationMs={12000} // opcional
-        pauseOnHover={true} // opcional
+        animationDurationMs={12000}
+        pauseOnHover={true}
       />
 
-      <section className="about container" style={{ marginBottom: "0px" }}>
-        <BannerImageCTAFull
-          src="/images/artbook.png"
-          href="/art"
-          buttonText="Ver detalhes"
-          alt="Banner Noah"
-        />
+      <section style={{ margin: 0, padding: 0 }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div
+            style={{
+              margin: "0 auto",
+              width: "100%",
+              maxWidth: 1920,
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <BannerImageCTAFull
+              src="/images/artbook.png"
+              href="/art"
+              buttonText="Ver detalhes"
+              alt="Banner Noah"
+            />
+          </div>
+        </div>
       </section>
-      <section style={{ marginTop: "0" }}>
+
+      <section style={{ margin: 0, padding: 0 }}>
         <CareerSection
           leftImages={["/images/logoconceito.png", "/images/logo25.png"]}
           rightImage="/images/img99.png"

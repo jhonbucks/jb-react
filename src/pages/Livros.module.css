@@ -1,0 +1,80 @@
+.searchBlock { padding: var(--space-6) var(--space-6) 0; }
+.searchGrid {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+.inputWrap { position: relative; }
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;           /* igual ao inline anterior */
+  outline: none;
+  font-size: 16px;
+  background: #fff;              /* fixo como antes */
+  color: inherit;
+}
+.searchBtn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: inherit;
+}
+
+.results {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;              /* fixo como antes */
+  max-height: 280px;
+  overflow-y: auto;
+}
+.noResult { padding: 14px; font-size: 14px; color: #777; }
+.resultItem {
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+.resultItem:hover { background: #f7f7f7; } /* igual ao inline */
+
+.inspBlock { margin-top: 24px; margin-bottom: 40px; }
+.inspGrid {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.inspImageBox {
+  background: #fff;              /* sem sombra, como pediu */
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inspImage { width: 80%; max-width: 400px; height: auto; }
+.inspText { max-width: 640px; margin: 0 auto 0 0; text-align: left; }
+
+@media (max-width: 1024px) {
+  .inspGrid { grid-template-columns: 1fr; gap: 32px; }
+  .inspImage { width: 100%; max-width: 300px; }
+}
