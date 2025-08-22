@@ -130,11 +130,16 @@ export default function Index() {
               marginTop: '40px',
             }}
           >
-            <FancyButton href="#sobre1">Comprar agora</FancyButton>
-            <FancyButton href="#digital" variant="secondary">
+            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
+              Comprar agora
+            </FancyButton>
+            <FancyButton
+              href="https://drive.google.com/file/d/1Qbf9SMYC4JClW4_cue9VApSR4lBaZ1aw/view?usp=sharing"
+              variant="secondary"
+            >
               Leia o 1º capítulo
             </FancyButton>
-            <FancyButton href="#sobre1">booktrailer</FancyButton>
+            <FancyButton href="#">booktrailer</FancyButton>
 
             <style>{`
           /* cSpell:words fbtn btns */
@@ -205,7 +210,7 @@ export default function Index() {
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
             <TransparentButton
-              href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P"
+              href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -241,11 +246,12 @@ export default function Index() {
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
             <TransparentButton
-              href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas/N100011577H"
+              href="#"
+              onClick={(e) => e.preventDefault()}
               target="_blank"
               rel="noopener noreferrer"
             >
-              comprar agora
+              Em Breve
             </TransparentButton>
           </div>
         </div>
@@ -424,6 +430,13 @@ export default function Index() {
             trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que
             devora não só vidas, mas também esperanças.
           </p>
+          <TransparentButton
+            href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            comprar agora
+          </TransparentButton>
           <div
             style={{
               paddingLeft: '50px',

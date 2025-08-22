@@ -128,7 +128,9 @@ export default function Livros() {
               apenas forças malignas, mas também os segredos de sua própria linhagem...
             </p>
             <div style={{ display: 'flex', gap: '16px' }}>
-              <FancyButton href="#">Comprar</FancyButton>
+              <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
+                Comprar
+              </FancyButton>
               <FancyButton href="/noah" variant="secondary">
                 Saiba mais
               </FancyButton>
@@ -152,7 +154,9 @@ export default function Livros() {
               Stolk, um jovem de 14 anos, vê sua vida tranquila no povoado de Nortreus....
             </p>
             <div style={{ display: 'flex', gap: '16px' }}>
-              <FancyButton href="#">Comprar</FancyButton>
+              <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P?sck=HOTMART_PRODUCT_PAGE">
+                Comprar
+              </FancyButton>
               <FancyButton href="/noahalmas" variant="secondary">
                 Saiba mais
               </FancyButton>
