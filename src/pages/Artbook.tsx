@@ -196,7 +196,7 @@ export default function Index() {
           id="sobre1"
           style={{
             textAlign: 'center',
-            display: 'flex',
+
             flexDirection: 'column',
             alignItems: 'center',
           }}
@@ -210,7 +210,14 @@ export default function Index() {
             um registro da construção artística, onde o esboço inicial e a versão finalizada
             coexistem, revelando não apenas o resultado, mas também o caminho percorrido até ele.
           </p>
-          <ImageGridLightbox images={conceptImages} />
+          <div
+            style={{
+              paddingLeft: '100px',
+              paddingRight: '100px',
+            }}
+          >
+            <ImageGridLightbox images={conceptImages} />
+          </div>
           <div
             className="btns-small"
             style={{
@@ -229,6 +236,7 @@ export default function Index() {
                   font-size: 0.9rem !important;
                   line-height: 1 !important;
                 }
+             
                 @media (max-width: 640px) {
                   .btns-small { justify-content: center; }
                   .btns-small .fbtn { padding: 8px 14px !important; }

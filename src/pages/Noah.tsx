@@ -408,7 +408,7 @@ export default function Index() {
           id="sobre1"
           style={{
             textAlign: 'center',
-            display: 'flex',
+
             flexDirection: 'column',
             alignItems: 'center',
           }}
@@ -424,7 +424,14 @@ export default function Index() {
             trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que
             devora não só vidas, mas também esperanças.
           </p>
-          <ImageGridLightbox images={conceptImages} />
+          <div
+            style={{
+              paddingLeft: '100px',
+              paddingRight: '100px',
+            }}
+          >
+            <ImageGridLightbox images={conceptImages} />
+          </div>
           <div
             className="btns-small"
             style={{
