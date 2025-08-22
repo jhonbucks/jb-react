@@ -1,3 +1,4 @@
+// src/components/GallerySection/index.tsx
 import { useEffect, useState, useCallback, type CSSProperties } from 'react';
 import styles from './gallerySection.module.css';
 
@@ -9,7 +10,7 @@ type Props = {
   title: string;
   description: string;
   thumbs: Thumb[];
-  textColor?: string; // controla a cor via CSS var
+  textColor?: string;
 };
 
 export default function GallerySection({
@@ -57,7 +58,13 @@ export default function GallerySection({
     <section className={styles.wrap}>
       <div className={styles.grid} style={cssVars}>
         <div className={styles.hero}>
-          <img className={styles.heroImg} src={heroSrc} alt={heroAlt} />
+          <img
+            className={styles.heroImg}
+            src={heroSrc}
+            alt={heroAlt}
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div>
@@ -72,7 +79,13 @@ export default function GallerySection({
                 onClick={() => openAt(i)}
                 aria-label={`Abrir imagem ${i + 1}`}
               >
-                <img className={styles.thumbImg} src={t.src} alt={t.alt ?? ''} />
+                <img
+                  className={styles.thumbImg}
+                  src={t.src}
+                  alt={t.alt ?? ''}
+                  loading="lazy"
+                  decoding="async"
+                />
               </button>
             ))}
           </div>

@@ -372,21 +372,24 @@ export default function Index() {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          padding: '60px 20px',
+
+          padding: '0 24px',
           color: '#fff', // deixa todos os textos brancos
         }}
       >
-        <GallerySection
-          heroSrc="/images/corvo.png"
-          title="Concept Art"
-          description={`“As ilustrações capturam a atmosfera sombria e mística de Noah e o Senhor das Almas, onde os corvos simbolizam presságios e segredos ocultos, voando sobre um mundo assolado pela escuridão. As casas de Nortreus, simples e acolhedoras sob a luz da lua, contrastam com a presença ameaçadora de um cajado ancestral erguido contra o céu, sugerindo a luta entre a magia protetora e o poder maligno de Gregor. Cada traço remete à dualidade central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que devora não só vidas, mas também esperanças.”`}
-          thumbs={[
-            { src: '/images/16.png' },
-            { src: '/images/18.png' },
-            { src: '/images/31.png' },
-            { src: '/images/30.png' },
-          ]}
-        />
+        <div style={{ padding: '0 24px' }}>
+          <GallerySection
+            heroSrc="/images/corvo.png"
+            title="Concept Art"
+            description={`“As ilustrações capturam a atmosfera sombria e mística de Noah e o Senhor das Almas, onde os corvos simbolizam presságios e segredos ocultos, voando sobre um mundo assolado pela escuridão. As casas de Nortreus, simples e acolhedoras sob a luz da lua, contrastam com a presença ameaçadora de um cajado ancestral erguido contra o céu, sugerindo a luta entre a magia protetora e o poder maligno de Gregor. Cada traço remete à dualidade central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que devora não só vidas, mas também esperanças.”`}
+            thumbs={[
+              { src: '/images/16.png' },
+              { src: '/images/18.png' },
+              { src: '/images/31.png' },
+              { src: '/images/30.png' },
+            ]}
+          />
+        </div>
       </section>
       <Footer />
     </>

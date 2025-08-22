@@ -1,41 +1,42 @@
 import React from 'react';
 
-type NavLink = {
-  label: string;
-  href: string;
-};
+type NavLink = { label: string; href: string };
 
 export default function Navbar() {
   const links: NavLink[] = [
     { label: 'SOBRE', href: '/sobre' },
     { label: 'Meus Livros', href: '/livros' },
     { label: 'Desenhos', href: '/desenhos' },
-    // { label: 'Loja', href: '#' },
   ];
 
   return (
     <header style={styles.wrap}>
       <nav style={styles.bar}>
-        {/* Logo fixa */}
         <a href="/" style={styles.logoBox}>
-          <img
-            src="/images/logo01.png" // coloque o caminho da sua logo
-            alt="Minha Logo"
-            style={styles.logo}
-          />
+          <img src="/images/logo01.png" alt="Minha Logo" style={styles.logo} />
         </a>
 
-        {/* Links */}
-        <ul style={styles.menu}>
+        <ul style={styles.menu} className="nav-links">
           {links.map((link) => (
-            <li key={link.label}>
-              <a href={link.href} style={styles.link}>
+            <li key={link.label} style={styles.item}>
+              <a href={link.href} style={styles.link} className="nav-link">
                 {link.label}
               </a>
             </li>
           ))}
         </ul>
       </nav>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .nav-links { gap: 14px; }
+          .nav-link { font-size: 11px; letter-spacing: 0.08em; }
+        }
+        @media (max-width: 420px) {
+          .nav-links { gap: 10px; }
+          .nav-link { font-size: 10px; letter-spacing: 0.06em; }
+        }
+      `}</style>
     </header>
   );
 }
@@ -43,17 +44,18 @@ export default function Navbar() {
 const styles: Record<string, React.CSSProperties> = {
   wrap: {
     width: '100%',
-
-    background: '#ffffffff',
+    background: '#fff',
   },
   bar: {
     maxWidth: 1280,
     margin: '0 auto',
-    padding: '0 24px',
-    height: 94,
+    padding: '0 clamp(8px, 2vw, 24px)',
+    height: 'clamp(54px, 8vw, 94px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    gap: 'clamp(8px, 2vw, 24px)',
+    overflow: 'hidden',
   },
   logoBox: {
     display: 'flex',
@@ -61,7 +63,7 @@ const styles: Record<string, React.CSSProperties> = {
     flexShrink: 0,
   },
   logo: {
-    height: 88,
+    height: 'clamp(36px, 7vw, 84px)',
     width: 'auto',
   },
   menu: {
@@ -70,14 +72,23 @@ const styles: Record<string, React.CSSProperties> = {
     listStyle: 'none',
     display: 'flex',
     alignItems: 'center',
-    flexWrap: 'wrap',
-    gap: 38,
+    gap: 'clamp(10px, 1.6vw, 32px)',
+    flexWrap: 'nowrap',
+    whiteSpace: 'nowrap',
+    justifyContent: 'flex-end',
+    flex: '1 1 auto',
+    minWidth: 0,
+  },
+  item: {
+    flexShrink: 1,
   },
   link: {
+    display: 'inline-block',
     textDecoration: 'none',
     color: '#2e2e2e',
     textTransform: 'uppercase',
-    letterSpacing: '0.35em',
-    fontSize: 14,
+    letterSpacing: 'clamp(0.06em, 0.35vw, 0.28em)',
+    fontSize: 'clamp(10px, 0.95vw, 14px)',
+    lineHeight: 1,
   },
 };

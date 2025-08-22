@@ -1,60 +1,94 @@
-.wrap { padding: clamp(16px, 4vw, 40px) 0; }
+/* src/components/GallerySection/gallerySection.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+.wrap { padding: clamp(20px, 5vw, 56px) 0; font-family: 'Oswald', sans-serif; }
 .grid {
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 var(--space-6);
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: clamp(20px, 4vw, 48px);
+  gap: clamp(24px, 4.5vw, 56px);
   align-items: center;
 }
 
 .hero { display: grid; place-items: center; }
 .heroImg {
-  width: clamp(240px, 45vw, 520px);
+  width: clamp(240px, 48vw, 560px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
 }
 
 .title {
-  font-size: clamp(28px, 4vw, 48px);
-  line-height: 1.15;
-  margin: 0 0 12px;
-  font-weight: 600;
+  font-size: clamp(34px, 6vw, 72px);
+  line-height: 1.12;
+  margin: 0 0 16px;
+  font-weight: 700;
   color: var(--sc-text, inherit);
+  letter-spacing: 0.01em;
 }
 .desc {
-  font-size: clamp(14px, 1.6vw, 18px);
-  line-height: 1.7;
-  margin: 0 0 20px;
-  max-width: 58ch;
+  font-size: clamp(16px, 2.1vw, 22px);
+  line-height: 1.75;
+  margin: 0 0 24px;
+  max-width: 64ch;
   color: var(--sc-text, inherit);
 }
 
 .thumbs {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(120px, 1fr);
-  gap: clamp(10px, 2vw, 20px);
+  grid-auto-columns: minmax(110px, 1fr);
+  gap: clamp(12px, 2.4vw, 22px);
   overflow-x: auto;
   padding-bottom: 6px;
+  scrollbar-width: thin;
 }
-.thumb { border: 0; background: transparent; padding: 0; cursor: pointer; border-radius: 8px; overflow: hidden; }
-.thumbImg { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-.thumb:hover .thumbImg { filter: brightness(0.95); transform: translateY(-1px); transition: 160ms ease; }
+.thumb { border: 0; background: transparent; padding: 0; cursor: pointer; border-radius: 10px; overflow: hidden; }
+.thumbImg { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: 160ms ease; }
+.thumb:hover .thumbImg { filter: brightness(0.95); transform: translateY(-1px); }
 
-.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.88); display: grid; grid-template-columns: 56px 1fr 56px; place-items: center; z-index: 60; }
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  display: grid;
+  grid-template-columns: 56px 1fr 56px;
+  place-items: center;
+  z-index: 60;
+}
 .full { max-width: min(1200px, 92vw); max-height: min(86vh, 900px); object-fit: contain; }
-.close { position: fixed; top: 14px; right: 18px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.12); color: #fff; font-size: 22px; cursor: pointer; }
-.nav { width: 48px; height: 48px; border-radius: 50%; border: 0; background: rgba(255,255,255,0.12); color: #fff; font-size: 30px; cursor: pointer; display: grid; place-items: center; }
-.prev { justify-self: end; } 
+.close {
+  position: fixed;
+  top: 14px; right: 18px;
+  width: 40px; height: 40px;
+  border-radius: 50%; border: 0;
+  background: rgba(255,255,255,0.12);
+  color: #fff; font-size: 24px; cursor: pointer;
+}
+.nav {
+  width: 48px; height: 48px;
+  border-radius: 50%; border: 0;
+  background: rgba(255,255,255,0.12);
+  color: #fff; font-size: 30px; cursor: pointer;
+  display: grid; place-items: center;
+}
+.prev { justify-self: end; }
 .next { justify-self: start; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .grid { grid-template-columns: 1fr; }
-  .heroImg { width: clamp(220px, 70vw, 420px); }
+  .heroImg { width: clamp(220px, 64vw, 480px); }
   .thumbs { grid-auto-columns: minmax(100px, 1fr); }
   .modal { grid-template-columns: 44px 1fr 44px; }
-  .nav { width: 40px; height: 40px; font-size: 26px; }
+  .nav { width: 42px; height: 42px; font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+  .wrap { padding: 24px 0; }
+  .title { font-size: clamp(30px, 9vw, 44px); }
+  .desc { font-size: clamp(15px, 4.2vw, 18px); }
+  .heroImg { width: clamp(200px, 72vw, 420px); }
+  .thumbs { gap: 12px; grid-auto-columns: minmax(92px, 1fr); }
 }
