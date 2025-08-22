@@ -70,6 +70,7 @@ const styles: Record<string, React.CSSProperties> = {
     listStyle: 'none',
     display: 'flex',
     alignItems: 'center',
+    flexWrap: 'wrap',
     gap: 38,
   },
   link: {
