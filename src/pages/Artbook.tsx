@@ -9,8 +9,16 @@ import TransparentButton from '../components/TransparentButton';
 import FancyButton from '../components/FancyButton';
 import GallerySection from '../components/GallerySection';
 import BannerImageCTAFull from '../components/BannerImageCTAFull';
+import ImageGridLightbox from '../components/ImageGridLightbox';
 
 export default function Index() {
+  const conceptImages = [
+    { src: '/images/art1.png', alt: 'Arte 1' },
+    { src: '/images/art2.png', alt: 'Arte 2' },
+    { src: '/images/art3.png', alt: 'Arte 3' },
+    { src: '/images/art4.png', alt: 'Arte 4' },
+  ];
+
   return (
     <>
       <Navbar />
@@ -181,22 +189,57 @@ export default function Index() {
 
       <section
         style={{
-          background: '#ffffffff', // mude a cor aqui
-          padding: '0 24px', // opcional (respiro vertical)
-          width: '100%',
+          padding: '0 24px',
         }}
       >
-        <GallerySection
-          heroSrc="/images/art6.png"
-          title="Concept Art"
-          description={`“Cada personagem e cena traduz um pedaço de narrativa, seja no movimento exagerado e cômico, no retrato caricato ou na sutileza das expressões faciais. A presença das paletas de cores reforça a identidade visual de cada ilustração, criando atmosferas únicas que dialogam com o humor, a fantasia e a imaginação. Este conjunto funciona como um registro da construção artística, onde o esboço inicial e a versão finalizada coexistem, revelando não apenas o resultado, mas também o caminho percorrido até ele.”`}
-          thumbs={[
-            { src: '/images/art1.png' },
-            { src: '/images/art2.png' },
-            { src: '/images/art3.png' },
-            { src: '/images/art4.png' },
-          ]}
-        />
+        <div
+          id="sobre1"
+          style={{
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <h2 style={{ paddingTop: '50px' }}>Concept art</h2> <br />
+          <p>
+            Cada personagem e cena traduz um pedaço de narrativa, seja no movimento exagerado e
+            cômico, no retrato caricato ou na sutileza das expressões faciais. A presença das
+            paletas de cores reforça a identidade visual de cada ilustração, criando atmosferas
+            únicas que dialogam com o humor, a fantasia e a imaginação. Este conjunto funciona como
+            um registro da construção artística, onde o esboço inicial e a versão finalizada
+            coexistem, revelando não apenas o resultado, mas também o caminho percorrido até ele.
+          </p>
+          <ImageGridLightbox images={conceptImages} />
+          <div
+            className="btns-small"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '40px',
+            }}
+          >
+            <style>{`
+                /* cSpell:words fbtn btns */
+                .btns-small .fbtn {
+                  padding: 8px 16px !important;
+                  font-size: 0.9rem !important;
+                  line-height: 1 !important;
+                }
+                @media (max-width: 640px) {
+                  .btns-small { justify-content: center; }
+                  .btns-small .fbtn { padding: 8px 14px !important; }
+                }
+                @media (max-width: 480px) {
+                  .btns-small { flex-direction: column; align-items: center; gap: 10px !important; }
+                  .btns-small .fbtn { width: 100%; max-width: 260px; }
+                }
+              `}</style>
+          </div>
+        </div>
       </section>
 
       {/* <section
