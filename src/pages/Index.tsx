@@ -1,16 +1,16 @@
-import React from "react";
-import Hero from "../components/Hero";
+import React from 'react';
+import Hero from '../components/Hero';
 
-import "./Index.css";
+import './Index.css';
 
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-import BannerImageCTAFull from "../components/BannerImageCTAFull";
-import CareerSection from "../components/CareerSection/CareerSection";
-import BannerImageCTAFullAnimate from "../components/BannerImageCTAFullAnimate";
+import BannerImageCTAFull from '../components/BannerImageCTAFull';
+import CareerSection from '../components/CareerSection/CareerSection';
+import BannerImageCTAFullAnimate from '../components/BannerImageCTAFullAnimate';
 
-const HERO_BG = "/images/fundonoah.png";
+const HERO_BG = '/images/fundonoah.png';
 
 export default function Index() {
   return (
@@ -28,14 +28,14 @@ export default function Index() {
       />
 
       <section style={{ margin: 0, padding: 0 }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div
             style={{
-              margin: "0 auto",
-              width: "100%",
+              margin: '0 auto',
+              width: '100%',
               maxWidth: 1920,
-              display: "flex",
-              justifyContent: "center",
+              display: 'flex',
+              justifyContent: 'center',
             }}
           >
             <BannerImageCTAFull
@@ -50,8 +50,8 @@ export default function Index() {
 
       <section style={{ margin: 0, padding: 0 }}>
         <CareerSection
-          leftImages={["/images/logoconceito.png", "/images/logo25.png"]}
-          rightImage="/images/img99.png"
+          leftImages={['/images/meu20.jpg', '/images/meu10.jpg']}
+          rightImage="/images/menina.png"
           title="Sobre mim"
           description="Jhon Bucks, sempre foi apaixonado por arte, expressando sua criatividade desde cedo por meio de desenhos e histórias..."
           href="/sobre"
