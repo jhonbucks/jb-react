@@ -426,8 +426,8 @@ export default function Index() {
           </p>
           <div
             style={{
-              paddingLeft: '100px',
-              paddingRight: '100px',
+              paddingLeft: '50px',
+              paddingRight: '50px',
             }}
           >
             <ImageGridLightbox images={conceptImages} />
