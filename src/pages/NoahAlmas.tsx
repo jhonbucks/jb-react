@@ -1,44 +1,42 @@
 // pages/Index.tsx
-import React from "react";
+import React from 'react';
 
-import "./Index.css";
+import './Index.css';
 
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import TransparentButton from "../components/TransparentButton";
-import FancyButton from "../components/FancyButton";
-import GallerySection from "../components/GallerySection";
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import TransparentButton from '../components/TransparentButton';
+import FancyButton from '../components/FancyButton';
+import GallerySection from '../components/GallerySection';
 
 export default function Index() {
   return (
     <>
       <Navbar />
-
       {/* HERO */}
       <div
         style={{
           marginTop: 0,
           backgroundImage: "url('/images/noahof1.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "280px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '280px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       />
-
       {/* BOTÕES HERO (mesma aba) */}
       <div
         className="btns-small"
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "14px",
-          flexWrap: "wrap",
-          marginTop: "40px",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '14px',
+          flexWrap: 'wrap',
+          marginTop: '40px',
         }}
       >
         <FancyButton href="#sobre1">Sobre a história</FancyButton>
@@ -64,48 +62,42 @@ export default function Index() {
           }
         `}</style>
       </div>
-
       {/* SOBRE */}
-      <section className="about container">
+      <section className="about container" style={{ padding: '0 24px' }}>
         <div id="sobre1">
           <p>
-            <strong>
-              Em um mundo onde a escuridão não é apenas uma sombra...
-            </strong>
+            <strong>Em um mundo onde a escuridão não é apenas uma sombra...</strong>
           </p>
           <p>
-            ...mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua
-            vida tranquila no povoado de Nortreus virar de cabeça para baixo
-            quando descobre a verdade sobre a tragédia que moldou seu passado.
-            Criado por seu avô, ele embarca em uma jornada épica ao lado de sua
-            destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles
-            enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser
-            consumido pela obsessão de escapar da mortalidade às custas de vidas
-            inocentes.
+            ...mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no
+            povoado de Nortreus virar de cabeça para baixo quando descobre a verdade sobre a
+            tragédia que moldou seu passado. Criado por seu avô, ele embarca em uma jornada épica ao
+            lado de sua destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles
+            enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser consumido pela obsessão
+            de escapar da mortalidade às custas de vidas inocentes.
           </p>
           <p>
-            Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que
-            confrontar não apenas forças malignas, mas também os segredos de sua
-            própria linhagem. Com desafios mortais à espreita em florestas
-            proibidas e cavernas sombrias, e aliados improváveis ao longo do
-            caminho, "Noah e o Senhor das Almas" é uma história emocionante
-            sobre perda, amizade e a busca incansável por justiça.
+            Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que confrontar não
+            apenas forças malignas, mas também os segredos de sua própria linhagem. Com desafios
+            mortais à espreita em florestas proibidas e cavernas sombrias, e aliados improváveis ao
+            longo do caminho, "Noah e o Senhor das Almas" é uma história emocionante sobre perda,
+            amizade e a busca incansável por justiça.
           </p>
           <p>
-            Prepare-se para ser transportado a um universo onde a luz brilha
-            mais intensamente quando confronta as trevas. Você está pronto para
-            seguir Noah nessa batalha épica que vai mudar o destino de todos?
+            Prepare-se para ser transportado a um universo onde a luz brilha mais intensamente
+            quando confronta as trevas. Você está pronto para seguir Noah nessa batalha épica que
+            vai mudar o destino de todos?
           </p>
           <p>Um livro que vai capturar seu coração desde a primeira página.</p>
           <div
             className="btns-small"
             style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "14px",
-              flexWrap: "wrap",
-              marginTop: "40px",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '40px',
             }}
           >
             <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-da-almas/E96772234P">
@@ -145,41 +137,37 @@ export default function Index() {
         `}</style>
           </div>
         </div>
-      </section>
-
+      </section>{' '}
+      <br />
       {/* BLOCO PRODUTOS (texto branco, imagens menores) */}
       <section
         id="insp-block"
         style={{
           marginTop: 0,
           backgroundImage: "url('/images/fundonoahof.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "80px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '80px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       >
         <div
           className="insp-grid"
           style={{
             maxWidth: 1200,
-            margin: "0 auto",
-            padding: "0 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
             gap: 48,
-            alignItems: "center",
+            alignItems: 'center',
           }}
         >
           <div className="insp-imageBox">
-            <img
-              src="/images/ed1digitalof.png"
-              alt="Livro digital"
-              className="insp-image"
-            />
+            <img src="/images/ed1digitalof.png" alt="Livro digital" className="insp-image" />
           </div>
 
           <div id="digital" className="insp-text">
@@ -192,13 +180,11 @@ export default function Index() {
               <strong>Páginas:</strong> 74
             </p>
             <p>
-              <strong>Formato:</strong> Digital (compatível com leitores de
-              PDF).
+              <strong>Formato:</strong> Digital (compatível com leitores de PDF).
             </p>
             <p>
-              <strong>Onde pode ser lido:</strong> Smartphones - Tablets -
-              Computadores - Leitores de eBook (como Kindle e Kobo, desde que
-              suportem o formato PDF).
+              <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
+              de eBook (como Kindle e Kobo, desde que suportem o formato PDF).
             </p>
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
@@ -212,11 +198,7 @@ export default function Index() {
           </div>
 
           <div className="insp-imageBox">
-            <img
-              src="/images/ed1fisicoof.png"
-              alt="Livro físico"
-              className="insp-image"
-            />
+            <img src="/images/ed1fisicoof.png" alt="Livro físico" className="insp-image" />
           </div>
 
           <div id="fisico" className="insp-text">
@@ -235,8 +217,7 @@ export default function Index() {
               <strong>Tipo de capa:</strong> Capa Comum
             </p>
             <p>
-              <strong>Dimensões do Livro:</strong> Altura: 21 cm • Largura: 14,8
-              cm
+              <strong>Dimensões do Livro:</strong> Altura: 21 cm • Largura: 14,8 cm
             </p>
             <p>
               <strong>Tipo de Papel:</strong> Offset
@@ -290,7 +271,6 @@ export default function Index() {
           }
         `}</style>
       </section>
-
       {/* <section
         style={{
           background: "#afc4d6", // mude a cor aqui
@@ -310,7 +290,6 @@ export default function Index() {
           ]}
         />
       </section> */}
-
       {/* <section
         style={{
           backgroundImage: "url('/images/imgfundo.png')", // sua imagem de fundo
@@ -333,7 +312,6 @@ export default function Index() {
           ]}
         />
       </section> */}
-
       <Footer />
     </>
   );

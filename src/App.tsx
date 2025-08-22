@@ -5,6 +5,7 @@ import Livros from './pages/Livros';
 import Noah from './pages/Noah';
 import Artbook from './pages/Artbook';
 import NoahAlmas from './pages/NoahAlmas';
+import Desenhos from './pages/Desenhos';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/art" element={<Artbook />} />
         <Route path="/noahalmas" element={<NoahAlmas />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/desenhos" element={<Desenhos />} />
       </Routes>
     </BrowserRouter>
   );

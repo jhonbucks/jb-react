@@ -1,38 +1,42 @@
-import React from "react";
+import React from 'react';
 
-import "./Index.css";
+import './Index.css';
 
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import HeroBanner from '../components/HeroBanner';
 
-const HERO_BG = "/images/oficialsite.gif";
+const HERO_BG = '/images/oficialsite.gif';
 
 export default function Index() {
   return (
     <>
       <Navbar />
-      <section className="about container">
-        <h2 id="sobre">
+      <HeroBanner
+        src="/images/menina.png"
+        title="sobre mim"
+        heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
+      />{' '}
+      <br />
+      <section className="about container" style={{ padding: '0 24px' }}>
+        {/* <h2 id="sobre">
           Sobre <span className="highlight">mim</span>
-        </h2>
+        </h2> */}
         <p>
-          Jhon Bucks, sempre foi apaixonado por arte, expressando sua
-          criatividade desde cedo por meio de desenhos e histórias. Atualmente,
-          é ilustrador, escritor e quadrinista, dedicado a criar universos
-          fantásticos e emocionantes. Seu mais novo projeto, o livro digital
-          Noah e o Senhor das Almas, combina narrativa envolvente e ilustrações
-          marcantes.
+          Jhon Bucks, sempre foi apaixonado por arte, expressando sua criatividade desde cedo por
+          meio de desenhos e histórias. Atualmente, é ilustrador, escritor e quadrinista, dedicado a
+          criar universos fantásticos e emocionantes. Seu mais novo projeto, o livro digital Noah e
+          o Senhor das Almas, combina narrativa envolvente e ilustrações marcantes.
         </p>
         <h2>
           Identidade <span className="highlight">visual</span>
         </h2>
 
         <p>
-          A evolução da minha identidade visual reflete uma jornada criativa que
-          acompanha o meu amadurecimento ao longo dos anos. Cada versão expressa
-          um momento distinto, começando com traços mais orgânicos e detalhados
-          (2012-2019), passando para uma simplificação minimalista (2019-2022),
-          até chegar à versão atual (2022-2024), que combina modernidade,
+          A evolução da minha identidade visual reflete uma jornada criativa que acompanha o meu
+          amadurecimento ao longo dos anos. Cada versão expressa um momento distinto, começando com
+          traços mais orgânicos e detalhados (2012-2019), passando para uma simplificação
+          minimalista (2019-2022), até chegar à versão atual (2022-2024), que combina modernidade,
           dinamismo e uma paleta de cores mais vibrante.
         </p>
         <div className="timeline">
@@ -54,54 +58,48 @@ export default function Index() {
           </div>
         </div>
         <p>
-          O desenho, inspirado em formas naturais, preserva elementos de
-          continuidade, como o espiral central e o bico estilizado, garantindo
-          reconhecimento e autenticidade enquanto incorpora uma linguagem visual
-          mais ousada e contemporânea.
+          O desenho, inspirado em formas naturais, preserva elementos de continuidade, como o
+          espiral central e o bico estilizado, garantindo reconhecimento e autenticidade enquanto
+          incorpora uma linguagem visual mais ousada e contemporânea.
         </p>
       </section>
       <section
         id="insp-block"
         style={{
           marginTop: 40,
-          backgroundColor: "#afc4d6",
-          padding: "40px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundColor: '#afc4d6',
+          padding: '40px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       >
         <div
           className="insp-grid"
           style={{
             maxWidth: 1200,
-            margin: "0 auto",
-            padding: "0 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
             gap: 48,
-            alignItems: "center",
+            alignItems: 'center',
           }}
         >
           <div className="insp-imageBox">
-            <img
-              src="/images/inspirations.png"
-              alt="2012–2019"
-              className="insp-image"
-            />
+            <img src="/images/inspirations.png" alt="2012–2019" className="insp-image" />
           </div>
 
           <div className="insp-text">
             <h2>Production</h2>
             <p>
-              O conceito visual dessa logo explora simplicidade e formas
-              orgânicas, transmitindo leveza e simpatia. O traço à mão, com
-              textura de lápis, reforça a ideia artesanal e pessoal, enquanto a
-              espiral no corpo sugere movimento e criatividade.
+              O conceito visual dessa logo explora simplicidade e formas orgânicas, transmitindo
+              leveza e simpatia. O traço à mão, com textura de lápis, reforça a ideia artesanal e
+              pessoal, enquanto a espiral no corpo sugere movimento e criatividade.
             </p>
             <p>
-              As variações mostram versatilidade e adaptação para diferentes
-              aplicações, mantendo a identidade.
+              As variações mostram versatilidade e adaptação para diferentes aplicações, mantendo a
+              identidade.
             </p>
           </div>
 
@@ -112,10 +110,9 @@ export default function Index() {
           <div className="insp-text">
             <h2>Cores</h2>
             <p>
-              A escolha do azul suave remete à confiança e tranquilidade,
-              contrastando com o grafite que traz solidez e seriedade. Essa
-              combinação equilibra proximidade e profissionalismo, criando um
-              símbolo marcante e memorável.
+              A escolha do azul suave remete à confiança e tranquilidade, contrastando com o grafite
+              que traz solidez e seriedade. Essa combinação equilibra proximidade e
+              profissionalismo, criando um símbolo marcante e memorável.
             </p>
           </div>
         </div>
@@ -145,7 +142,6 @@ export default function Index() {
     }
   `}</style>
       </section>
-
       <Footer />
     </>
   );

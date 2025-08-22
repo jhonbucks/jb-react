@@ -1,44 +1,42 @@
 // pages/Index.tsx
-import React from "react";
+import React from 'react';
 
-import "./Index.css";
+import './Index.css';
 
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import TransparentButton from "../components/TransparentButton";
-import FancyButton from "../components/FancyButton";
-import GallerySection from "../components/GallerySection";
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import TransparentButton from '../components/TransparentButton';
+import FancyButton from '../components/FancyButton';
+import GallerySection from '../components/GallerySection';
 
 export default function Index() {
   return (
     <>
       <Navbar />
-
       {/* HERO */}
       <div
         style={{
           marginTop: 0,
           backgroundImage: "url('/images/noah1.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "280px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '280px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       />
-
       {/* BOTÕES HERO (mesma aba) */}
       <div
         className="btns-small"
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "14px",
-          flexWrap: "wrap",
-          marginTop: "40px",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '14px',
+          flexWrap: 'wrap',
+          marginTop: '40px',
         }}
       >
         <FancyButton href="#sobre1">Sobre a história</FancyButton>
@@ -67,48 +65,42 @@ export default function Index() {
           }
         `}</style>
       </div>
-
       {/* SOBRE */}
-      <section className="about container">
+      <section className="about container" style={{ padding: '0 24px' }}>
         <div id="sobre1">
           <p>
-            <strong>
-              Em um mundo onde a escuridão não é apenas uma sombra...
-            </strong>
+            <strong>Em um mundo onde a escuridão não é apenas uma sombra...</strong>
           </p>
           <p>
-            ...mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua
-            vida tranquila no povoado de Nortreus virar de cabeça para baixo
-            quando descobre a verdade sobre a tragédia que moldou seu passado.
-            Criado por seu avô, ele embarca em uma jornada épica ao lado de sua
-            destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles
-            enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser
-            consumido pela obsessão de escapar da mortalidade às custas de vidas
-            inocentes.
+            ...mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no
+            povoado de Nortreus virar de cabeça para baixo quando descobre a verdade sobre a
+            tragédia que moldou seu passado. Criado por seu avô, ele embarca em uma jornada épica ao
+            lado de sua destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles
+            enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser consumido pela obsessão
+            de escapar da mortalidade às custas de vidas inocentes.
           </p>
           <p>
-            Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que
-            confrontar não apenas forças malignas, mas também os segredos de sua
-            própria linhagem. Com desafios mortais à espreita em florestas
-            proibidas e cavernas sombrias, e aliados improváveis ao longo do
-            caminho, "Noah e o Senhor das Almas" é uma história emocionante
-            sobre perda, amizade e a busca incansável por justiça.
+            Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que confrontar não
+            apenas forças malignas, mas também os segredos de sua própria linhagem. Com desafios
+            mortais à espreita em florestas proibidas e cavernas sombrias, e aliados improváveis ao
+            longo do caminho, "Noah e o Senhor das Almas" é uma história emocionante sobre perda,
+            amizade e a busca incansável por justiça.
           </p>
           <p>
-            Prepare-se para ser transportado a um universo onde a luz brilha
-            mais intensamente quando confronta as trevas. Você está pronto para
-            seguir Noah nessa batalha épica que vai mudar o destino de todos?
+            Prepare-se para ser transportado a um universo onde a luz brilha mais intensamente
+            quando confronta as trevas. Você está pronto para seguir Noah nessa batalha épica que
+            vai mudar o destino de todos?
           </p>
           <p>Um livro que vai capturar seu coração desde a primeira página.</p>
           <div
             className="btns-small"
             style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "14px",
-              flexWrap: "wrap",
-              marginTop: "40px",
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '40px',
             }}
           >
             <FancyButton href="#sobre1">Comprar agora</FancyButton>
@@ -135,41 +127,36 @@ export default function Index() {
         `}</style>
           </div>
         </div>
-      </section>
-
-      {/* BLOCO PRODUTOS (texto branco, imagens menores) */}
+      </section>{' '}
+      <br /> {/* BLOCO PRODUTOS (texto branco, imagens menores) */}
       <section
         id="insp-block"
         style={{
           marginTop: 0,
           backgroundImage: "url('/images/imgfundo.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "80px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '80px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       >
         <div
           className="insp-grid"
           style={{
             maxWidth: 1200,
-            margin: "0 auto",
-            padding: "0 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
             gap: 48,
-            alignItems: "center",
+            alignItems: 'center',
           }}
         >
           <div className="insp-imageBox">
-            <img
-              src="/images/ed2digitaltr.png"
-              alt="Livro digital"
-              className="insp-image"
-            />
+            <img src="/images/ed2digitaltr.png" alt="Livro digital" className="insp-image" />
           </div>
 
           <div id="digital" className="insp-text">
@@ -182,13 +169,11 @@ export default function Index() {
               <strong>Páginas:</strong> 74
             </p>
             <p>
-              <strong>Formato:</strong> Digital (compatível com leitores de
-              PDF).
+              <strong>Formato:</strong> Digital (compatível com leitores de PDF).
             </p>
             <p>
-              <strong>Onde pode ser lido:</strong> Smartphones - Tablets -
-              Computadores - Leitores de eBook (como Kindle e Kobo, desde que
-              suportem o formato PDF).
+              <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
+              de eBook (como Kindle e Kobo, desde que suportem o formato PDF).
             </p>
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
@@ -202,11 +187,7 @@ export default function Index() {
           </div>
 
           <div className="insp-imageBox">
-            <img
-              src="/images/ed2fisicot.png"
-              alt="Livro físico"
-              className="insp-image"
-            />
+            <img src="/images/ed2fisicot.png" alt="Livro físico" className="insp-image" />
           </div>
 
           <div id="fisico" className="insp-text">
@@ -225,8 +206,7 @@ export default function Index() {
               <strong>Tipo de capa:</strong> Capa Comum
             </p>
             <p>
-              <strong>Dimensões do Livro:</strong> Altura: 21 cm • Largura: 14,8
-              cm
+              <strong>Dimensões do Livro:</strong> Altura: 21 cm • Largura: 14,8 cm
             </p>
             <p>
               <strong>Tipo de Papel:</strong> Offset
@@ -280,16 +260,15 @@ export default function Index() {
           }
         `}</style>
       </section>
-
       <section
         id="showcase-block"
         style={{
           marginTop: 40,
-          backgroundColor: "#ffffff",
-          padding: "40px 0",
-          width: "100vw",
-          marginLeft: "calc(50% - 50vw)",
-          marginRight: "calc(50% - 50vw)",
+          backgroundColor: '#ffffff',
+          padding: '40px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
         }}
       >
         <div
@@ -297,20 +276,16 @@ export default function Index() {
           className="showcase-grid"
           style={{
             maxWidth: 1200,
-            margin: "0 auto",
-            padding: "0 24px",
-            display: "grid",
-            gridTemplateColumns: "1.1fr 1fr",
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
             gap: 48,
-            alignItems: "center",
+            alignItems: 'center',
           }}
         >
           <div className="showcase-imageBox">
-            <img
-              src="/images/song.png"
-              alt="2012–2019"
-              className="showcase-image"
-            />
+            <img src="/images/song.png" alt="2012–2019" className="showcase-image" />
           </div>
 
           <div className="showcase-text">
@@ -318,16 +293,15 @@ export default function Index() {
               Trilha sonora <span className="highlight">do livro</span>
             </h2>
             <p>
-              Transforme sua leitura em uma experiência inesquecível! Imagine
-              mergulhar na história de Noah e o Senhor das Almas enquanto cada
-              capítulo ganha vida com uma trilha sonora feita especialmente para
-              ele. De momentos de mistério e emoção a batalhas épicas e
-              recomeços cheios de esperança, cada faixa da soundtrack acompanha
-              o ritmo da narrativa, tornando a aventura ainda mais envolvente.
-              Aperte o play e viva essa jornada como nunca antes!
+              Transforme sua leitura em uma experiência inesquecível! Imagine mergulhar na história
+              de Noah e o Senhor das Almas enquanto cada capítulo ganha vida com uma trilha sonora
+              feita especialmente para ele. De momentos de mistério e emoção a batalhas épicas e
+              recomeços cheios de esperança, cada faixa da soundtrack acompanha o ritmo da
+              narrativa, tornando a aventura ainda mais envolvente. Aperte o play e viva essa
+              jornada como nunca antes!
             </p>
             <FancyButton href="https://music.youtube.com/playlist?list=PLx8pfCgphZXmLTHzG78blHcLobHQCz385">
-              {" "}
+              {' '}
               Ouça agora
             </FancyButton>
           </div>
@@ -373,7 +347,6 @@ export default function Index() {
     }
   `}</style>
       </section>
-
       {/* <section
         style={{
           background: "#afc4d6", // mude a cor aqui
@@ -393,15 +366,14 @@ export default function Index() {
           ]}
         />
       </section> */}
-
       <section
         style={{
           backgroundImage: "url('/images/imgfundo.png')", // sua imagem de fundo
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "60px 20px",
-          color: "#fff", // deixa todos os textos brancos
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '60px 20px',
+          color: '#fff', // deixa todos os textos brancos
         }}
       >
         <GallerySection
@@ -409,14 +381,13 @@ export default function Index() {
           title="Concept Art"
           description={`“As ilustrações capturam a atmosfera sombria e mística de Noah e o Senhor das Almas, onde os corvos simbolizam presságios e segredos ocultos, voando sobre um mundo assolado pela escuridão. As casas de Nortreus, simples e acolhedoras sob a luz da lua, contrastam com a presença ameaçadora de um cajado ancestral erguido contra o céu, sugerindo a luta entre a magia protetora e o poder maligno de Gregor. Cada traço remete à dualidade central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que devora não só vidas, mas também esperanças.”`}
           thumbs={[
-            { src: "/images/16.png" },
-            { src: "/images/18.png" },
-            { src: "/images/31.png" },
-            { src: "/images/30.png" },
+            { src: '/images/16.png' },
+            { src: '/images/18.png' },
+            { src: '/images/31.png' },
+            { src: '/images/30.png' },
           ]}
         />
       </section>
-
       <Footer />
     </>
   );

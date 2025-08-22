@@ -1,0 +1,40 @@
+/* components/HeroBanner/heroBanner.module.css */
+.wrap {
+  position: relative;
+  width: 100vw;
+  height: var(--h, 70vh);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-image: 
+    linear-gradient(to top, rgba(0,0,0,.65) 0%, rgba(0,0,0,.25) 40%, rgba(0,0,0,0) 70%),
+    var(--img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;   /* centraliza vertical */
+  justify-content: center; /* centraliza horizontal */
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom-left-radius: 90px;   /* borda arredondada */
+  border-bottom-right-radius: 90px;  /* borda arredondada */
+  overflow: hidden; /* garante que a imagem respeite o arredondado */
+}
+
+.inner {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.title {
+  margin: 0;
+  color: #fff;
+  letter-spacing: .12em;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(28px, 6vw, 64px);
+  line-height: 1.1;
+  text-shadow: 0 2px 18px rgba(0,0,0,.45);
+}
+

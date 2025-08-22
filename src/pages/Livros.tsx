@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import FancyButton from '../components/FancyButton';
 import styles from './Livros.module.css';
+import HeroBanner from '../components/HeroBanner';
 
 type Heading = { id: string; text: string };
 
@@ -51,8 +52,13 @@ export default function Livros() {
   return (
     <>
       <Navbar />
-
-      <section className={styles.searchBlock}>
+      <HeroBanner
+        src="/images/dogs.png"
+        title="meus livros"
+        heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
+      />{' '}
+      <br />
+      {/* <section className={styles.searchBlock} style={{ padding: '0 10px' }}>
         <div className={styles.searchGrid}>
           <div className={styles.inputWrap}>
             <input
@@ -98,10 +104,9 @@ export default function Livros() {
             </div>
           )}
         </div>
-      </section>
-
+      </section> */}
       {/* Mantemos o id para o querySelector funcionar */}
-      <section id="insp-block" className={styles.inspBlock}>
+      <section id="insp-block" className={styles.inspBlock} style={{ padding: '0 24px' }}>
         <div className={styles.inspGrid}>
           <div className={styles.inspImageBox}>
             <img
@@ -177,7 +182,6 @@ export default function Livros() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

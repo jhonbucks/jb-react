@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type NavLink = {
   label: string;
@@ -7,10 +7,10 @@ type NavLink = {
 
 export default function Navbar() {
   const links: NavLink[] = [
-    { label: "SOBRE", href: "/sobre" },
-    { label: "Meus Livros", href: "/livros" },
-    { label: "Desenhos", href: "#" },
-    { label: "Loja", href: "#" },
+    { label: 'SOBRE', href: '/sobre' },
+    { label: 'Meus Livros', href: '/livros' },
+    { label: 'Desenhos', href: '/desenhos' },
+    // { label: 'Loja', href: '#' },
   ];
 
   return (
@@ -42,41 +42,41 @@ export default function Navbar() {
 
 const styles: Record<string, React.CSSProperties> = {
   wrap: {
-    width: "100%",
+    width: '100%',
 
-    background: "#ffffffff",
+    background: '#ffffffff',
   },
   bar: {
     maxWidth: 1280,
-    margin: "0 auto",
-    padding: "0 24px",
+    margin: '0 auto',
+    padding: '0 24px',
     height: 94,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   logoBox: {
-    display: "flex",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center',
     flexShrink: 0,
   },
   logo: {
     height: 88,
-    width: "auto",
+    width: 'auto',
   },
   menu: {
     margin: 0,
     padding: 0,
-    listStyle: "none",
-    display: "flex",
-    alignItems: "center",
+    listStyle: 'none',
+    display: 'flex',
+    alignItems: 'center',
     gap: 38,
   },
   link: {
-    textDecoration: "none",
-    color: "#2e2e2e",
-    textTransform: "uppercase",
-    letterSpacing: "0.35em",
+    textDecoration: 'none',
+    color: '#2e2e2e',
+    textTransform: 'uppercase',
+    letterSpacing: '0.35em',
     fontSize: 14,
   },
 };
