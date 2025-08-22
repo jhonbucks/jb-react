@@ -31,10 +31,39 @@ export default function Index() {
         heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
       />
 
-      <section
-        style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}
-      >
-        <ImageGridLightbox images={conceptImages} />
+      <section className="about container">
+        <div id="sobre1">
+          <ImageGridLightbox images={conceptImages} />
+
+          <div
+            className="btns-small"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '10px',
+            }}
+          >
+            <style>{`
+                /* cSpell:words fbtn btns */
+                .btns-small .fbtn {
+                  padding: 8px 16px !important;
+                  font-size: 0.9rem !important;
+                  line-height: 1 !important;
+                }
+                @media (max-width: 640px) {
+                  .btns-small { justify-content: center; }
+                  .btns-small .fbtn { padding: 8px 14px !important; }
+                }
+                @media (max-width: 480px) {
+                  .btns-small { flex-direction: column; align-items: center; gap: 10px !important; }
+                  .btns-small .fbtn { width: 100%; max-width: 260px; }
+                }
+              `}</style>
+          </div>
+        </div>
       </section>
 
       <Footer />

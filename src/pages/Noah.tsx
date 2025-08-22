@@ -9,13 +9,14 @@ import TransparentButton from '../components/TransparentButton';
 import FancyButton from '../components/FancyButton';
 import GallerySection from '../components/GallerySection';
 import BannerImageCTAFull from '../components/BannerImageCTAFull';
+import ImageGridLightbox from '../components/ImageGridLightbox';
 
 export default function Index() {
   const conceptImages = [
-    { src: '/images/meu12.jpg', alt: 'Arte 1' },
-    { src: '/images/meu13.jpg', alt: 'Arte 2' },
-    { src: '/images/meu7.png', alt: 'Arte 3' },
-    { src: '/images/meu19.jpg', alt: 'Arte 4' },
+    { src: '/images/18.png', alt: 'Arte 1' },
+    { src: '/images/16.png', alt: 'Arte 2' },
+    { src: '/images/30.png', alt: 'Arte 3' },
+    { src: '/images/31.png', alt: 'Arte 4' },
   ];
 
   return (
@@ -403,18 +404,55 @@ export default function Index() {
           color: '#fff', // deixa todos os textos brancos
         }}
       >
-        <div style={{ padding: '0 24px' }}>
-          <GallerySection
-            heroSrc="/images/corvo.png"
-            title="Concept Art"
-            description={`“As ilustrações capturam a atmosfera sombria e mística de Noah e o Senhor das Almas, onde os corvos simbolizam presságios e segredos ocultos, voando sobre um mundo assolado pela escuridão. As casas de Nortreus, simples e acolhedoras sob a luz da lua, contrastam com a presença ameaçadora de um cajado ancestral erguido contra o céu, sugerindo a luta entre a magia protetora e o poder maligno de Gregor. Cada traço remete à dualidade central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que devora não só vidas, mas também esperanças.”`}
-            thumbs={[
-              { src: '/images/16.png' },
-              { src: '/images/18.png' },
-              { src: '/images/31.png' },
-              { src: '/images/30.png' },
-            ]}
-          />
+        <div
+          id="sobre1"
+          style={{
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <h2 style={{ paddingTop: '50px' }}>Concept art</h2> <br />
+          <p>
+            As ilustrações capturam a atmosfera sombria e mística de Noah e o Senhor das Almas, onde
+            os corvos simbolizam presságios e segredos ocultos, voando sobre um mundo assolado pela
+            escuridão. As casas de Nortreus, simples e acolhedoras sob a luz da lua, contrastam com
+            a presença ameaçadora de um cajado ancestral erguido contra o céu, sugerindo a luta
+            entre a magia protetora e o poder maligno de Gregor. Cada traço remete à dualidade
+            central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor
+            trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que
+            devora não só vidas, mas também esperanças.
+          </p>
+          <ImageGridLightbox images={conceptImages} />
+          <div
+            className="btns-small"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '40px',
+            }}
+          >
+            <style>{`
+          /* cSpell:words fbtn btns */
+          .btns-small .fbtn {
+            padding: 8px 16px !important;
+            font-size: 0.9rem !important;
+            line-height: 1 !important;
+          }
+          @media (max-width: 640px) {
+            .btns-small { justify-content: center; }
+            .btns-small .fbtn { padding: 8px 14px !important; }
+          }
+          @media (max-width: 480px) {
+            .btns-small { flex-direction: column; align-items: center; gap: 10px !important; }
+            .btns-small .fbtn { width: 100%; max-width: 260px; }
+          }
+        `}</style>
+          </div>
         </div>
       </section>
       <Footer />
