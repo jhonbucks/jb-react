@@ -8,25 +8,31 @@ import Navbar from '../components/Navbar';
 import TransparentButton from '../components/TransparentButton';
 import FancyButton from '../components/FancyButton';
 import GallerySection from '../components/GallerySection';
+import BannerImageCTAFull from '../components/BannerImageCTAFull';
 
 export default function Index() {
   return (
     <>
       <Navbar />
       {/* HERO */}
-      <div
-        style={{
-          marginTop: 0,
-          backgroundImage: "url('/images/noahof1.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          padding: '280px 0',
-          width: '100vw',
-          marginLeft: 'calc(50% - 50vw)',
-          marginRight: 'calc(50% - 50vw)',
-        }}
-      />
+      <div>
+        <div
+          style={{
+            margin: '0 auto',
+            width: '100%',
+            maxWidth: 1920,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <BannerImageCTAFull
+            src="/images/noahof1.png"
+            href="#"
+            buttonText="Ver detalhes"
+            alt="Banner Noah"
+          />
+        </div>
+      </div>
       {/* BOTÕES HERO (mesma aba) */}
       <div
         className="btns-small"

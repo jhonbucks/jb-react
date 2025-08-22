@@ -8,13 +8,39 @@ import Navbar from '../components/Navbar';
 import TransparentButton from '../components/TransparentButton';
 import FancyButton from '../components/FancyButton';
 import GallerySection from '../components/GallerySection';
+import BannerImageCTAFull from '../components/BannerImageCTAFull';
 
 export default function Index() {
+  const conceptImages = [
+    { src: '/images/meu12.jpg', alt: 'Arte 1' },
+    { src: '/images/meu13.jpg', alt: 'Arte 2' },
+    { src: '/images/meu7.png', alt: 'Arte 3' },
+    { src: '/images/meu19.jpg', alt: 'Arte 4' },
+  ];
+
   return (
     <>
       <Navbar />
+      <div>
+        <div
+          style={{
+            margin: '0 auto',
+            width: '100%',
+            maxWidth: 1920,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <BannerImageCTAFull
+            src="/images/noah1.png"
+            href="#"
+            buttonText="Ver detalhes"
+            alt="Banner Noah"
+          />
+        </div>
+      </div>
       {/* HERO */}
-      <div
+      {/* <div
         style={{
           marginTop: 0,
           backgroundImage: "url('/images/noah1.png')",
@@ -26,7 +52,7 @@ export default function Index() {
           marginLeft: 'calc(50% - 50vw)',
           marginRight: 'calc(50% - 50vw)',
         }}
-      />
+      /> */}
       {/* BOTÕES HERO (mesma aba) */}
       <div
         className="btns-small"
