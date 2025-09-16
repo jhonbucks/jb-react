@@ -25,11 +25,11 @@ export default function Index() {
     <>
       <Navbar />
 
-      <HeroBanner
+      {/* <HeroBanner
         src="/images/meu24.png"
         title="meus desenhos"
         heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
-      />
+      /> */}
 
       <section className="about container">
         <div id="sobre1">

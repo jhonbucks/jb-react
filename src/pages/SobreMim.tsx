@@ -12,11 +12,11 @@ export default function Index() {
   return (
     <>
       <Navbar />
-      <HeroBanner
+      {/* <HeroBanner
         src="/images/menina.png"
         title="sobre mim"
         heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
-      />{' '}
+      />{' '} */}
       <br />
       <section className="about container" style={{ padding: '0 24px' }}>
         {/* <h2 id="sobre">

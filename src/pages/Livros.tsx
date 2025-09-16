@@ -52,11 +52,11 @@ export default function Livros() {
   return (
     <>
       <Navbar />
-      <HeroBanner
+      {/* <HeroBanner
         src="/images/dogs.png"
         title="meus livros"
         heightVh={60} // pode trocar para 100 se quiser ocupar a tela inteira
-      />{' '}
+      />{' '} */}
       <br />
       {/* <section className={styles.searchBlock} style={{ padding: '0 10px' }}>
         <div className={styles.searchGrid}>
