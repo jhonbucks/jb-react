@@ -1,5 +1,5 @@
 // pages/Index.tsx
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Index.css';
 
@@ -18,6 +18,48 @@ export default function Index() {
     { src: '/images/30.png', alt: 'Arte 3' },
     { src: '/images/31.png', alt: 'Arte 4' },
   ];
+
+  const [data, setData] = useState({ nome: '', email: '' });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log('🔥 handleSubmit disparado!', data);
+
+    const SHEET_URL = 'https://sheetdb.io/api/v1/m6cjydmnmh3jx';
+
+    try {
+      const res = await fetch(SHEET_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              nome: data.nome,
+              email: data.email,
+              data_envio: new Date().toISOString(),
+            },
+          ],
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Erro HTTP: ${res.status}`);
+      }
+
+      setSubmitted(true);
+      alert('✅ Dados enviados com sucesso!');
+    } catch (err) {
+      console.error('Erro ao enviar formulário:', err);
+      alert('⚠️ Erro ao enviar os dados.');
+    }
+  };
 
   return (
     <>
@@ -130,16 +172,13 @@ export default function Index() {
               marginTop: '40px',
             }}
           >
-            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
+            {/* <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
               Comprar agora
-            </FancyButton>
-            <FancyButton
-              href="https://drive.google.com/file/d/1Qbf9SMYC4JClW4_cue9VApSR4lBaZ1aw/view?usp=sharing"
-              variant="secondary"
-            >
+            </FancyButton> */}
+            {/* <FancyButton href="#form" variant="secondary">
               Leia o 1º capítulo
-            </FancyButton>
-            <FancyButton href="#">booktrailer</FancyButton>
+            </FancyButton> */}
+            {/* <FancyButton href="#">booktrailer</FancyButton> */}
 
             <style>{`
           /* cSpell:words fbtn btns */
@@ -208,13 +247,16 @@ export default function Index() {
               de eBook (como Kindle e Kobo, desde que suportem o formato PDF).
             </p>
             <br />
+            <p>
+              Aproveite a pré-venda com o cupom: <strong>NOAH20</strong>{' '}
+            </p>
             {/* ESTE abre em NOVA ABA (Hotmart) */}
             <TransparentButton
               href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
               target="_blank"
               rel="noopener noreferrer"
             >
-              comprar agora
+              Pré-venda
             </TransparentButton>
           </div>
 
@@ -386,7 +428,7 @@ export default function Index() {
           padding: "40px 0", // opcional (respiro vertical)
           width: "100%",
         }}
-      >
+      > 
         <GallerySection
           heroSrc="/images/corvo.png"
           title="Concept Art"
@@ -397,7 +439,7 @@ export default function Index() {
             { src: "/images/31.png" },
             { src: "/images/30.png" },
           ]}
-        />
+        /> 
       </section> */}
       <section
         style={{
@@ -429,14 +471,18 @@ export default function Index() {
             central da narrativa: inocência perdida e coragem forjada, enquanto Noah, Daia e Theodor
             trilham uma jornada em que amizade e sacrifício se tornam armas contra um inimigo que
             devora não só vidas, mas também esperanças.
-          </p>
+          </p>{' '}
+          <br />
           <TransparentButton
             href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
             target="_blank"
             rel="noopener noreferrer"
           >
-            comprar agora
+            Pré-venda
           </TransparentButton>
+          <p>
+            Aproveite a pré-venda com o cupom: <strong>NOAH20</strong>{' '}
+          </p>
           <div
             style={{
               paddingLeft: '50px',
@@ -474,6 +520,87 @@ export default function Index() {
         `}</style>
           </div>
         </div>
+      </section>
+      {/* FORMULÁRIO DE DOWNLOAD */}
+      {/* FORMULÁRIO DE DOWNLOAD */}
+      <section
+        id="form"
+        style={{
+          background: '#ffffffff',
+          color: '#000000ff',
+          padding: '60px 20px',
+          textAlign: 'center',
+        }}
+      >
+        <h2 style={{ marginBottom: '20px' }}>
+          Leia o <span className="highlight">primeiro capítulo</span>
+        </h2>
+
+        {!submitted ? (
+          <form
+            onSubmit={handleSubmit}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '14px',
+              maxWidth: '400px',
+              margin: '0 auto',
+            }}
+          >
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu nome"
+              value={data.nome}
+              onChange={handleChange}
+              required
+              style={{
+                padding: '10px',
+                borderRadius: '8px',
+                border: '1px solid ##638CA6',
+                width: '100%',
+              }}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu e-mail"
+              value={data.email}
+              onChange={handleChange}
+              required
+              style={{
+                padding: '10px',
+                borderRadius: '8px',
+                border: '1px solid ##638CA6',
+                width: '100%',
+              }}
+            />
+            <div style={{ marginTop: '16px' }}>
+              <button
+                type="submit"
+                style={{
+                  background: '#638CA6',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: '8px',
+                  padding: '12px 24px',
+                  fontSize: '16px',
+                  cursor: 'pointer',
+                }}
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        ) : (
+          <div>
+            <p>Cadastro concluído. Abra o capítulo e mergulhe na história!</p>
+            <FancyButton href="https://drive.google.com/file/d/1EHTYAoq4wGTv9n-XqS6VEmjm-kvAxWBz/view?usp=sharing">
+              Começar leitura
+            </FancyButton>
+          </div>
+        )}
       </section>
       <Footer />
     </>
