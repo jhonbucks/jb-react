@@ -199,6 +199,41 @@ export default function Index() {
           </div>
         </div>
       </section>{' '}
+      <section
+        id="booktrailer"
+        style={{
+          padding: '60px 20px',
+          textAlign: 'center',
+          background: '#ffffffff', // fundo preto para destacar
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            paddingBottom: '40%', // 16:9
+            height: 0,
+            overflow: 'hidden',
+            borderRadius: '12px',
+            maxWidth: '1050px',
+            margin: '0 auto',
+          }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/gbDKFOc9OeU?start=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+            }}
+          ></iframe>
+        </div>
+      </section>
       <br /> {/* BLOCO PRODUTOS (texto branco, imagens menores) */}
       <section
         id="insp-block"
@@ -280,7 +315,7 @@ export default function Index() {
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 83
+              <strong>Páginas:</strong> 83npm r
             </p>
             <p>
               <strong>Formato:</strong> Impresso
