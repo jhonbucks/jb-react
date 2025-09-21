@@ -234,10 +234,15 @@ export default function Index() {
             <h2>Livro digital</h2>
             <br />
             <p>
+              Inclui uma história extra da Floresta Negra, nova capa ilustrada e pôsteres exclusivos
+              que expandem ainda mais o universo da aventura.
+            </p>
+
+            <p>
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 74
+              <strong>Páginas:</strong> 83
             </p>
             <p>
               <strong>Formato:</strong> Digital (compatível com leitores de PDF).
@@ -268,10 +273,14 @@ export default function Index() {
             <h2>Livro físico</h2>
             <br />
             <p>
+              Inclui uma história extra da Floresta Negra, nova capa ilustrada e pôsteres exclusivos
+              que expandem ainda mais o universo da aventura.
+            </p>
+            <p>
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 74
+              <strong>Páginas:</strong> 83
             </p>
             <p>
               <strong>Formato:</strong> Impresso
