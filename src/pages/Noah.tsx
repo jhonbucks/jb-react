@@ -283,7 +283,7 @@ export default function Index() {
             </p>
             <p>
               <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
-              de eBook (como Kindle e Kobo, desde que suportem o formato PDF).
+              de eBook (como Kindle e Kobo, entre outros).
             </p>
             <br />
             <p>
