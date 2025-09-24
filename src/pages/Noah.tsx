@@ -272,7 +272,6 @@ export default function Index() {
               Inclui uma história extra da Floresta Negra, nova capa ilustrada e pôsteres exclusivos
               que expandem ainda mais o universo da aventura.
             </p>
-
             <p>
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
@@ -291,13 +290,23 @@ export default function Index() {
               Aproveite a pré-venda com o cupom: <strong>NOAH20</strong>{' '}
             </p>
             {/* ESTE abre em NOVA ABA (Hotmart) */}
-            <TransparentButton
-              href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Pré-venda
-            </TransparentButton>
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <TransparentButton
+                href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pré-venda Hotmart
+              </TransparentButton>
+
+              <TransparentButton
+                href="https://www.amazon.com.br/dp/B0FSF2YJ2N"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pré-venda Amazon/kindle
+              </TransparentButton>
+            </div>
           </div>
 
           <div className="insp-imageBox">
