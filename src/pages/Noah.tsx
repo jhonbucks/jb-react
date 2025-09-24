@@ -296,7 +296,7 @@ export default function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pré-venda Hotmart
+                Hotmart
               </TransparentButton>
 
               <TransparentButton
@@ -304,7 +304,8 @@ export default function Index() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Pré-venda Amazon/kindle
+                {' '}
+                Amazon/kindle
               </TransparentButton>
             </div>
           </div>
