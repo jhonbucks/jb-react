@@ -129,8 +129,9 @@ export default function Livros() {
             </p>
             <div style={{ display: 'flex', gap: '16px' }}>
               <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
-                Comprar
+                Hotmart
               </FancyButton>
+              <FancyButton href="https://www.amazon.com.br/dp/B0FSF2YJ2N">Amazon</FancyButton>
               <FancyButton href="/noah" variant="secondary">
                 Saiba mais
               </FancyButton>
