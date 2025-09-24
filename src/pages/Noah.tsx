@@ -650,7 +650,7 @@ export default function Index() {
         ) : (
           <div>
             <p>Cadastro concluído. Abra o capítulo e mergulhe na história!</p>
-            <FancyButton href="https://drive.google.com/file/d/1EHTYAoq4wGTv9n-XqS6VEmjm-kvAxWBz/view?usp=sharing">
+            <FancyButton href="https://drive.google.com/file/d/1AqAA-TrwDWuK41gc1ckfBj99HDVJQheP/view">
               Começar leitura
             </FancyButton>
           </div>
