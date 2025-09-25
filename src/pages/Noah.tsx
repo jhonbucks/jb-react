@@ -54,10 +54,9 @@ export default function Index() {
       }
 
       setSubmitted(true);
-      alert('✅ Dados enviados com sucesso!');
     } catch (err) {
       console.error('Erro ao enviar formulário:', err);
-      alert('⚠️ Erro ao enviar os dados.');
+      // em caso de erro você pode exibir uma mensagem na página também, se quiser
     }
   };
 
@@ -576,7 +575,6 @@ export default function Index() {
         </div>
       </section>
       {/* FORMULÁRIO DE DOWNLOAD */}
-      {/* FORMULÁRIO DE DOWNLOAD */}
       <section
         id="form"
         style={{
@@ -612,7 +610,7 @@ export default function Index() {
               style={{
                 padding: '10px',
                 borderRadius: '8px',
-                border: '1px solid ##638CA6',
+                border: '1px solid #638CA6',
                 width: '100%',
               }}
             />
@@ -626,7 +624,7 @@ export default function Index() {
               style={{
                 padding: '10px',
                 borderRadius: '8px',
-                border: '1px solid ##638CA6',
+                border: '1px solid #638CA6',
                 width: '100%',
               }}
             />
@@ -648,8 +646,17 @@ export default function Index() {
             </div>
           </form>
         ) : (
-          <div>
-            <p>Cadastro concluído. Abra o capítulo e mergulhe na história!</p>
+          <div style={{ textAlign: 'center' }}>
+            <p
+              style={{
+                color: 'green',
+                fontWeight: 'bold',
+                fontSize: '18px',
+                marginBottom: '20px',
+              }}
+            >
+              ✅ Capítulo liberado com sucesso!
+            </p>
             <FancyButton href="https://drive.google.com/file/d/1AqAA-TrwDWuK41gc1ckfBj99HDVJQheP/view">
               Começar leitura
             </FancyButton>
