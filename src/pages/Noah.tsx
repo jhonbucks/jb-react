@@ -324,7 +324,7 @@ export default function Index() {
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 83npm r
+              <strong>Páginas:</strong> 83
             </p>
             <p>
               <strong>Formato:</strong> Impresso
@@ -340,13 +340,21 @@ export default function Index() {
             </p>
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
-            <TransparentButton
+            {/* <TransparentButton
               href="#"
               onClick={(e) => e.preventDefault()}
               target="_blank"
               rel="noopener noreferrer"
             >
               Em Breve
+            </TransparentButton> */}
+            <TransparentButton
+              href="https://go.hotmart.com/O102268682Q"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              Comprar
             </TransparentButton>
           </div>
         </div>
