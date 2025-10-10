@@ -278,16 +278,13 @@ export default function Index() {
               <strong>Páginas:</strong> 83
             </p>
             <p>
-              <strong>Formato:</strong> Digital (compatível com leitores de PDF).
+              <strong>Formato:</strong> Digital
             </p>
             <p>
               <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
               de eBook (como Kindle e Kobo, entre outros).
             </p>
             <br />
-            <p>
-              Aproveite a pré-venda com o cupom: <strong>NOAH20</strong>{' '}
-            </p>
             {/* ESTE abre em NOVA ABA (Hotmart) */}
             <div style={{ display: 'flex', gap: '12px' }}>
               <TransparentButton
@@ -297,7 +294,6 @@ export default function Index() {
               >
                 Hotmart
               </TransparentButton>
-
               <TransparentButton
                 href="https://www.amazon.com.br/dp/B0FSF2YJ2N"
                 target="_blank"
@@ -305,8 +301,25 @@ export default function Index() {
               >
                 {' '}
                 Amazon/kindle
-              </TransparentButton>
-            </div>
+              </TransparentButton>{' '}
+              {/* <TransparentButton
+                href="https://www.amazon.com/dp/B0FVHG5DVL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {' '}
+                Versão inglês
+              </TransparentButton> */}
+            </div>{' '}
+            <br />
+            <TransparentButton
+              href="https://www.amazon.com/dp/B0FVHG5DVL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              Versão inglês
+            </TransparentButton>
           </div>
 
           <div className="insp-imageBox">
@@ -330,14 +343,13 @@ export default function Index() {
               <strong>Formato:</strong> Impresso
             </p>
             <p>
-              <strong>Tipo de capa:</strong> Capa Comum
+              Livro impresso em Papel Branco, 75g/m² P&amp;B, no tamanho 15x21cm com 82 páginas.
+              Este produto é feito sob demandas - será produzido especialmente para você após a
+              compra. Por isso, o prazo de entrega pode levar alguns dias. Essa abordagem reduz
+              desperdícios e estoques excedentes, contribuindo para uma produção mais sustentável e
+              alinhada com boas práticas de ESG.
             </p>
-            <p>
-              <strong>Dimensões do Livro:</strong> Altura: 21 cm • Largura: 14,8 cm
-            </p>
-            <p>
-              <strong>Tipo de Papel:</strong> Offset
-            </p>
+
             <br />
             {/* ESTE abre em NOVA ABA (Hotmart) */}
             {/* <TransparentButton
