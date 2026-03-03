@@ -110,7 +110,7 @@ export default function Livros() {
         <div className={styles.inspGrid}>
           <div className={styles.inspImageBox}>
             <img
-              src="/images/livro00.png"
+              src="/images/2325.png"
               alt="Capa da edição especial de Noah e o Senhor das Almas, fundo escuro"
               className={styles.inspImage}
             />
@@ -119,7 +119,7 @@ export default function Livros() {
             <h2>
               Noah e o <span className="highlight">Senhor das Almas</span>{' '}
               <span style={{ fontSize: 'clamp(12px,2.5vw,30px)', fontWeight: 400 }}>
-                – Edição Especial
+                Edição Oficial
               </span>
             </h2>
 
@@ -131,14 +131,14 @@ export default function Livros() {
               <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F">
                 Hotmart
               </FancyButton>
-              <FancyButton href="https://www.amazon.com.br/dp/B0FSF2YJ2N">Amazon</FancyButton>
+              <FancyButton href="https://www.amazon.com.br/dp/B0GR1GKFJJ">Amazon</FancyButton>
               <FancyButton href="/noah" variant="secondary">
                 Saiba mais
               </FancyButton>
             </div>
           </div>
 
-          <div className={styles.inspImageBox}>
+          {/* <div className={styles.inspImageBox}>
             <img
               src="/images/livro1.png"
               alt="Capa do livro Noah e o Senhor das Almas"
@@ -162,7 +162,7 @@ export default function Livros() {
                 Saiba mais
               </FancyButton>
             </div>
-          </div>
+          </div> */}
 
           <div className={styles.inspImageBox}>
             <img src="/images/livro2.png" alt="Capa do The art BOOK" className={styles.inspImage} />
