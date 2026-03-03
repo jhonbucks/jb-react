@@ -299,7 +299,7 @@ export default function Index() {
                 Hotmart
               </TransparentButton>
               <TransparentButton
-                href="https://www.amazon.com.br/dp/B0FSF2YJ2N"
+                href="https://www.amazon.com.br/dp/B0GR1GKFJJ"
                 target="_blank"
                 rel="noopener noreferrer"
               >
