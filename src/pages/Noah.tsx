@@ -136,30 +136,34 @@ export default function Index() {
       {/* SOBRE */}
       <section className="about container" style={{ padding: '0 24px' }}>
         <div id="sobre1">
+          {' '}
+          <br />
           <p>
-            <strong>Em um mundo onde a escuridão não é apenas uma sombra...</strong>
+            <strong>
+              Quando Noah Stolk descobre a verdade sobre a noite que matou seus pais, sua vida se
+              transforma em uma missão impossível: libertar as almas aprisionadas por Gregor, o
+              temível Senhor das Almas.
+            </strong>
           </p>
           <p>
-            ...mas um inimigo voraz, Noah Stolk, um jovem de 14 anos, vê sua vida tranquila no
-            povoado de Nortreus virar de cabeça para baixo quando descobre a verdade sobre a
-            tragédia que moldou seu passado. Criado por seu avô, ele embarca em uma jornada épica ao
-            lado de sua destemida amiga Daia e do misterioso guardião Theodor. Juntos, eles
-            enfrentam a ameaça sombria do Senhor das Almas, Gregor, um ser consumido pela obsessão
-            de escapar da mortalidade às custas de vidas inocentes.
+            Ao lado de sua destemida amiga Daia — que também carrega a dor de uma mãe perdida — e do
+            misterioso guardião Theodor, Noah atravessa a perigosa Floresta Negra. Lá, criaturas
+            nascidas da escuridão espreitam: corvos que são olhos do inimigo, aranhas que tecem
+            teias mortais e os terríveis sussurrantes, que imitam vozes amadas para atrair
+            viajantes.
           </p>
           <p>
-            Nesta aventura repleta de coragem, magia e sacrifício, Noah terá que confrontar não
-            apenas forças malignas, mas também os segredos de sua própria linhagem. Com desafios
-            mortais à espreita em florestas proibidas e cavernas sombrias, e aliados improváveis ao
-            longo do caminho, "Noah e o Senhor das Almas" é uma história emocionante sobre perda,
-            amizade e a busca incansável por justiça.
+            Mas Theodor guarda um segredo: ele já foi amigo de Gregor, antes que o medo da morte o
+            consumisse. E quando o guardião se sacrifica para salvá-los, Noah e Daia precisam
+            encontrar forças que nem sabiam possuir. No coração das Montanhas das Sombras, Noah
+            descobre uma luz interior capaz de enfrentar qualquer escuridão — uma luz que sua mãe
+            lhe disse, em sonhos, que existia dentro dele.
           </p>
           <p>
-            Prepare-se para ser transportado a um universo onde a luz brilha mais intensamente
-            quando confronta as trevas. Você está pronto para seguir Noah nessa batalha épica que
-            vai mudar o destino de todos?
+            <em>"Noah e o Senhor das Almas"</em> é uma jornada emocionante sobre perda, amizade,
+            coragem e o poder transformador das escolhas. Uma história que vai aquecer seu coração,
+            arrancar suas lágrimas e lembrar você de que a verdadeira luz nunca se apaga.
           </p>
-          <p>Um livro que vai capturar seu coração desde a primeira página.</p>
           <div
             className="btns-small"
             style={{
@@ -261,7 +265,7 @@ export default function Index() {
           }}
         >
           <div className="insp-imageBox">
-            <img src="/images/ed2digitaltr.png" alt="Livro digital" className="insp-image" />
+            <img src="/images/livro0023.png" alt="Livro digital" className="insp-image" />
           </div>
 
           <div id="digital" className="insp-text">
@@ -275,7 +279,7 @@ export default function Index() {
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 83
+              <strong>Páginas:</strong> 193
             </p>
             <p>
               <strong>Formato:</strong> Digital
@@ -323,7 +327,7 @@ export default function Index() {
           </div>
 
           <div className="insp-imageBox">
-            <img src="/images/ed2fisicot.png" alt="Livro físico" className="insp-image" />
+            <img src="/images/livro002.png" alt="Livro físico" className="insp-image" />
           </div>
 
           <div id="fisico" className="insp-text">
@@ -337,7 +341,7 @@ export default function Index() {
               <strong>Gênero:</strong> Fantasia - Aventura
             </p>
             <p>
-              <strong>Páginas:</strong> 83
+              <strong>Páginas:</strong> 193
             </p>
             <p>
               <strong>Formato:</strong> Impresso
@@ -677,7 +681,7 @@ export default function Index() {
             >
               ✅ Capítulo liberado com sucesso!
             </p>
-            <FancyButton href="https://drive.google.com/file/d/1AqAA-TrwDWuK41gc1ckfBj99HDVJQheP/view">
+            <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
               Começar leitura
             </FancyButton>
           </div>
