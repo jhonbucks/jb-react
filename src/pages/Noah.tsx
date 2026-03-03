@@ -347,7 +347,7 @@ export default function Index() {
               <strong>Formato:</strong> Impresso
             </p>
             <p>
-              Livro impresso em Papel Branco, 75g/m² P&amp;B, no tamanho 15x21cm com 82 páginas.
+              Livro impresso em Papel Branco, 75g/m² P&amp;B, no tamanho 15x21cm com 193 páginas.
               Este produto é feito sob demandas - será produzido especialmente para você após a
               compra. Por isso, o prazo de entrega pode levar alguns dias. Essa abordagem reduz
               desperdícios e estoques excedentes, contribuindo para uma produção mais sustentável e
