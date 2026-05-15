@@ -6,6 +6,8 @@ import Noah from './pages/Noah';
 import Artbook from './pages/Artbook';
 import NoahAlmas from './pages/NoahAlmas';
 import Desenhos from './pages/Desenhos';
+import ArtbookNoah from './pages/ArtbookNoah';
+import FormArtbookNoah from './pages/FormArtbookNoah';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="/noahalmas" element={<NoahAlmas />} />
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/desenhos" element={<Desenhos />} />
+        <Route path="/artbooknoah" element={<ArtbookNoah />} />
+        <Route path="/formartbook" element={<FormArtbookNoah />} />
       </Routes>
     </BrowserRouter>
   );
