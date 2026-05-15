@@ -19,8 +19,8 @@ export default function Index() {
       {/* <Hero /> */}
       <BannerImageCTAFullAnimate
         src="/images/oficial00.gif"
-        href="/ArtbookNoah"
-        buttonText="Saiba mais"
+        href="/formartbook"
+        buttonText="Pré-venda"
         alt="Banner Noah"
       />{' '}
       <br />
