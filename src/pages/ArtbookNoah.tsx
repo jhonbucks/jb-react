@@ -13,10 +13,14 @@ import ImageGridLightbox from '../components/ImageGridLightbox';
 
 export default function Index() {
   const conceptImages = [
-    { src: '/images/art1.png', alt: 'Arte 1' },
-    { src: '/images/art2.png', alt: 'Arte 2' },
-    { src: '/images/art3.png', alt: 'Arte 3' },
-    { src: '/images/art4.png', alt: 'Arte 4' },
+    { src: '/images/6.png', alt: 'Arte 1' },
+    { src: '/images/22.png', alt: 'Arte 2' },
+    { src: '/images/28.png', alt: 'Arte 3' },
+    { src: '/images/art1818.png', alt: 'Arte 2' },
+    { src: '/images/art2020.png', alt: 'Arte 3' },
+    { src: '/images/art2526.jpg', alt: 'Arte 3' },
+    { src: '/images/plantas.png', alt: 'Arte 2' },
+    { src: '/images/lion.png', alt: 'Arte 3' },
   ];
 
   const [data, setData] = useState({ nome: '', email: '' });
@@ -73,7 +77,7 @@ export default function Index() {
           }}
         >
           <BannerImageCTAFull
-            src="/images/artbook1.png"
+            src="/images/artnoah00.png"
             href="#"
             buttonText="Ver detalhes"
             alt="Banner Noah"
@@ -87,16 +91,19 @@ export default function Index() {
       <section className="about container" style={{ padding: '0 24px' }}>
         <div id="sobre1">
           <p>
-            <strong>
-              "The Art Book" de Jhon Bucks é uma coletânea visual que explora a criatividade...
-            </strong>
+            <strong>O ArtBook de Noah e o Senhor das Almas é uma coletânea visual...</strong>
           </p>
           <p>
-            ...do artista por meio de ilustrações únicas, fanarts marcantes e criações autorais
-            inspiradas por temas diversos. Com um estilo vibrante e cheio de personalidade, o livro
-            conduz o leitor por um mergulho em mundos imaginativos, técnicas artísticas e
-            inspirações que moldaram sua jornada criativa. Esta edição é um convite para conhecer de
-            perto o talento e a paixão de Jhon Bucks pelo desenho.
+            que documenta todo o processo criativo por trás do livro. Ele reúne desde os primeiros
+            esboços até as ilustrações finais, organizados por categorias como personagens
+            principais, criaturas, cenários e objetos simbólicos. O material também inclui anotações
+            de processo, testes de paleta de cores, estudos de composição e variações de design que
+            não entraram na versão final. Cada página foi pensada para oferecer um olhar técnico
+            sobre como a narrativa visual foi construída em paralelo à escrita. O objetivo é mostrar
+            não apenas o resultado, mas as decisões, tentativas e ajustes ao longo da produção. É um
+            registro transparente do trabalho de um ilustrador e escritor desenvolvendo seu próprio
+            universo. Ideal para quem se interessa por bastidores, processos de criação ou
+            simplesmente quer mergulhar mais fundo nesse mundo.
           </p>
           <p>Muito mais que um livro, The Art Book é um portal para a imaginação.</p>
 
@@ -112,7 +119,10 @@ export default function Index() {
             <h2 style={{ marginBottom: '20px' }}>
               Veja uma <span className="highlight">prévia do ArtBook</span>
             </h2>
-            <p>Prévia limitada: Receba ilustrações exclusivas do ArtBook.</p>
+            <p>
+              Prévia limitada: primeiro capítulo do livro "Noah e o Senhor das Almas" + ilustrações
+              exclusivas do ArtBook.
+            </p>
             {!submitted ? (
               <form
                 onSubmit={handleSubmit}
@@ -182,7 +192,7 @@ export default function Index() {
                 >
                   Capítulo liberado com sucesso!
                 </p>
-                <FancyButton href="https://drive.google.com/file/d/1N85dgwAS-oDRiSk5x9kFeWexNjJ--vA7/view?usp=sharing">
+                <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
                   Começar leitura
                 </FancyButton>
               </div>
@@ -196,7 +206,7 @@ export default function Index() {
         id="insp-block"
         style={{
           marginTop: 0,
-          backgroundImage: "url('/images/imgfundoart.png')",
+          backgroundImage: "url('/images/fundopagart.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -219,7 +229,7 @@ export default function Index() {
           }}
         >
           <div className="insp-imageBox">
-            <img src="/images/digitalart.png" alt="Livro digital" className="insp-image" />
+            <img src="/images/art10.png" alt="Livro digital" className="insp-image" />
           </div>
 
           <div id="digital" className="insp-text">
@@ -239,40 +249,97 @@ export default function Index() {
               de eBook (como Kindle e Kobo, desde que suportem o formato PDF)
             </p>
             <br />
-            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/the-art-book/W97175302W">
-              hotmart
-            </FancyButton>{' '}
-            <FancyButton href="https://www.amazon.com.br/dp/B0GYB53B55">amazon/kindle</FancyButton>
+            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/artbook-noah-e-o-senhor-das-almas/U105732964T">
+              Comprar agora
+            </FancyButton>
           </div>
+        </div>
 
+        <style>{`
+          #insp-block .insp-imageBox{
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #insp-block .insp-image{
+            width: 70%;
+            max-width: 380px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          }
+          #insp-block .insp-text{
+            max-width: 640px;
+            margin: 0 auto 0 0;
+            text-align: left;
+          }
+          /* texto branco nesta seção */
+          #insp-block .insp-text h2,
+          #insp-block .insp-text p{
+            color: #020202ff !important;
+          }
+          @media (max-width: 1024px){
+            #insp-block .insp-grid{
+              grid-template-columns: 1fr !important;
+              gap: 32px;
+            }
+            #insp-block .insp-image{ width: 65%; max-width: 320px; }
+          }
+          @media (max-width: 640px){
+            #insp-block .insp-image{ width: 80%; max-width: 260px; }
+          }
+        `}</style>
+      </section>
+      <section
+        id="insp-block"
+        style={{
+          marginTop: 0,
+          backgroundImage: "url('/images/fundopagart.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '80px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
+        }}
+      >
+        <div
+          className="insp-grid"
+          style={{
+            maxWidth: 1200,
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
+            gap: 48,
+            alignItems: 'center',
+          }}
+        >
           <div className="insp-imageBox">
-            <img src="/images/artfisico.png" alt="Livro digital" className="insp-image" />
+            <img src="/images/livroeart.png" alt="Livro digital" className="insp-image" />
           </div>
 
           <div id="digital" className="insp-text">
-            <h2>Livro físico</h2>
+            <h2>Livro + artbook digital</h2>
             <br />
             <p>
-              <strong>Gênero:</strong> Art - Design
+              <strong>Gênero:</strong> Fantasia - Art
+            </p>
+
+            <p>
+              <strong>Formato:</strong> Digital
             </p>
             <p>
-              <strong>Páginas:</strong> 32
-            </p>
-            <p>
-              <strong>Formato:</strong> Impresso
-            </p>
-            <p>
-              Muito mais que um livro, The Art Book é um portal para a imaginação. Livro impresso em
-              Papel Branco, 75g/m² P&amp;B, no tamanho 16x22cm com 32 páginas. Este produto é feito
-              sob demandas - será produzido especialmente para você após a compra. Por isso, o prazo
-              de entrega pode levar alguns dias. Essa abordagem reduz desperdícios e estoques
-              excedentes, contribuindo para uma produção mais sustentável e alinhada com boas
-              práticas de ESG.
+              <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
+              de eBook (como Kindle e Kobo, desde que suportem o formato PDF)
             </p>
             <br />
-            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-the-art-book-lxs6u/H105645420I">
-              hotmart
-            </FancyButton>{' '}
+            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-artbook-formato-digital/E105733274A">
+              Comprar agora
+            </FancyButton>
           </div>
         </div>
 
@@ -330,13 +397,48 @@ export default function Index() {
         >
           <h2 style={{ paddingTop: '50px' }}>Concept art</h2> <br />
           <p>
-            Cada personagem e cena traduz um pedaço de narrativa, seja no movimento exagerado e
-            cômico, no retrato caricato ou na sutileza das expressões faciais. A presença das
-            paletas de cores reforça a identidade visual de cada ilustração, criando atmosferas
-            únicas que dialogam com o humor, a fantasia e a imaginação. Este conjunto funciona como
-            um registro da construção artística, onde o esboço inicial e a versão finalizada
-            coexistem, revelando não apenas o resultado, mas também o caminho percorrido até ele.
+            O desenvolvimento visual de Noah e o Senhor das Almas começa pelos concept arts, onde
+            cada elemento da narrativa ganha forma pela primeira vez. Personagens são estudados em
+            suas proporções, expressões e silhuetas, buscando transmitir personalidade já no traço
+            inicial. As criaturas da Floresta Negra passam por múltiplas iterações até encontrarem o
+            equilíbrio entre estranheza e credibilidade. Os cenários, por sua vez, são pensados para
+            contar história através da composição, luz e atmosfera. Cada rascunho é uma etapa de
+            validação, onde ideias são testadas, refinas ou descartadas. O processo não é linear,
+            mas cada versão aproxima o desenho da visão original. Este material bruto é o que
+            transformo em arte-final e, depois, em página finalizada. Compartilho esse caminho para
+            mostrar que toda imagem começa muito antes de ficar pronta.
           </p>
+          <div
+            className="btns-small"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: '14px',
+              flexWrap: 'wrap',
+              marginTop: '40px',
+            }}
+          >
+            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/artbook-noah-e-o-senhor-das-almas/U105732964T">
+              Comprar agora
+            </FancyButton>{' '}
+            <style>{`
+          /* cSpell:words fbtn btns */
+          .btns-small .fbtn {
+            padding: 8px 16px !important;
+            font-size: 0.9rem !important;
+            line-height: 1 !important;
+          }
+          @media (max-width: 640px) {
+            .btns-small { justify-content: center; }
+            .btns-small .fbtn { padding: 8px 14px !important; }
+          }
+          @media (max-width: 480px) {
+            .btns-small { flex-direction: column; align-items: center; gap: 10px !important; }
+            .btns-small .fbtn { width: 100%; max-width: 260px; }
+          }
+        `}</style>
+          </div>
           <div
             style={{
               paddingLeft: '50px',
@@ -425,17 +527,17 @@ export default function Index() {
           {/* Primeiro item */}
           <div className="showcase-item">
             <div className="showcase-imageBox">
-              <img src="/images/capa56.png" alt="2012–2019" className="showcase-image" />
+              <img src="/images/livro2.png" alt="2012–2019" className="showcase-image" />
             </div>
             <div className="showcase-text">
               <h3>
-                ArtBook <span className="highlight">Noah e o Senhor das Almas </span>
+                The<span className="highlight"> Art Book </span>
               </h3>
               <p>
-                O ArtBook de Noah e o Senhor das Almas é uma coletânea visual que documenta todo o
-                processo criativo por trás do livro. Ele reúne desde os primeiros esboços...
+                Coletânea visual que explora a criatividade do artista por meio de ilustrações
+                únicas, fanarts marcantes e criações autorais inspiradas por temas diversos....
               </p>
-              <FancyButton href="/artbookNoah">SAIBA MAIS</FancyButton>
+              <FancyButton href="/art">SAIBA MAIS</FancyButton>
             </div>
           </div>
 
@@ -459,52 +561,52 @@ export default function Index() {
         </div>
 
         <style>{`
-          /* Todos os estilos são escopados pelo ID #showcase-block */
-          #showcase-block .showcase-item {
-            background: #f9f9f9;
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-          }
-          #showcase-block .showcase-imageBox {
-            background: #fff;
-            border-radius: 16px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 16px;
-          }
-          #showcase-block .showcase-image {
-            width: 60%;
-            max-width: 200px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-          }
-          #showcase-block .showcase-text {
-            text-align: center;
-          }
-          #showcase-block .showcase-text h3 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
-          }
-          #showcase-block .showcase-text p {
-            font-size: 0.85rem;
-            line-height: 1.4;
-            margin-bottom: 16px;
-          }
-          @media (max-width: 768px) {
-            #showcase-block .showcase-grid {
-              grid-template-columns: 1fr !important;
-              gap: 24px;
-            }
-            #showcase-block .showcase-image {
-              width: 50%;
-              max-width: 150px;
-            }
-          }
-        `}</style>
+                /* Todos os estilos são escopados pelo ID #showcase-block */
+                #showcase-block .showcase-item {
+                  background: #f9f9f9;
+                  border-radius: 20px;
+                  padding: 20px;
+                  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                }
+                #showcase-block .showcase-imageBox {
+                  background: #fff;
+                  border-radius: 16px;
+                  overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-bottom: 16px;
+                }
+                #showcase-block .showcase-image {
+                  width: 60%;
+                  max-width: 200px;
+                  height: auto;
+                  display: block;
+                  margin: 0 auto;
+                }
+                #showcase-block .showcase-text {
+                  text-align: center;
+                }
+                #showcase-block .showcase-text h3 {
+                  font-size: 1.2rem;
+                  margin-bottom: 12px;
+                }
+                #showcase-block .showcase-text p {
+                  font-size: 0.85rem;
+                  line-height: 1.4;
+                  margin-bottom: 16px;
+                }
+                @media (max-width: 768px) {
+                  #showcase-block .showcase-grid {
+                    grid-template-columns: 1fr !important;
+                    gap: 24px;
+                  }
+                  #showcase-block .showcase-image {
+                    width: 50%;
+                    max-width: 150px;
+                  }
+                }
+              `}</style>
       </section>
 
       <Footer />

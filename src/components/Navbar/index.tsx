@@ -7,8 +7,8 @@ export default function Navbar() {
 
   const links: NavLink[] = [
     { label: 'SOBRE', href: '/sobre' },
-    { label: 'Meus Livros', href: '/livros' },
-    { label: 'Desenhos', href: '/desenhos' },
+    { label: 'LOJA', href: '/livros' },
+    { label: 'Arte', href: '/desenhos' },
   ];
 
   return (

@@ -164,6 +164,95 @@ export default function Index() {
             coragem e o poder transformador das escolhas. Uma história que vai aquecer seu coração,
             arrancar suas lágrimas e lembrar você de que a verdadeira luz nunca se apaga.
           </p>
+          {/* FORMULÁRIO DE DOWNLOAD */}
+          <section
+            id="form"
+            style={{
+              background: '#ffffffff',
+              color: '#000000ff',
+              padding: '60px 20px',
+              textAlign: 'center',
+            }}
+          >
+            <h2 style={{ marginBottom: '20px' }}>
+              Leia o <span className="highlight">primeiro capítulo</span>
+            </h2>
+            <p>Prévia limitada: leia primeiro capítulo do livro "Noah e o Senhor das Almas".</p>
+            {!submitted ? (
+              <form
+                onSubmit={handleSubmit}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '14px',
+                  maxWidth: '400px',
+                  margin: '0 auto',
+                }}
+              >
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Seu nome"
+                  value={data.nome}
+                  onChange={handleChange}
+                  required
+                  style={{
+                    padding: '10px',
+                    borderRadius: '8px',
+                    border: '1px solid #638CA6',
+                    width: '100%',
+                  }}
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Seu e-mail"
+                  value={data.email}
+                  onChange={handleChange}
+                  required
+                  style={{
+                    padding: '10px',
+                    borderRadius: '8px',
+                    border: '1px solid #638CA6',
+                    width: '100%',
+                  }}
+                />
+                <div style={{ marginTop: '16px' }}>
+                  <button
+                    type="submit"
+                    style={{
+                      background: '#638CA6',
+                      color: '#ffffff',
+                      border: 'none',
+                      borderRadius: '8px',
+                      padding: '12px 24px',
+                      fontSize: '16px',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <div style={{ textAlign: 'center' }}>
+                <p
+                  style={{
+                    color: 'green',
+                    fontWeight: 'bold',
+                    fontSize: '18px',
+                    marginBottom: '20px',
+                  }}
+                >
+                  ✅ Capítulo liberado com sucesso!
+                </p>
+                <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
+                  Começar leitura
+                </FancyButton>
+              </div>
+            )}{' '}
+          </section>
           <div
             className="btns-small"
             style={{
@@ -373,6 +462,45 @@ export default function Index() {
               Comprar
             </TransparentButton>
           </div>
+
+          <div className="insp-imageBox">
+            <img src="/images/livroartfundo.png" alt="Livro físico" className="insp-image" />
+          </div>
+
+          <div id="fisico" className="insp-text">
+            <h2>Livro + artbook digital</h2>
+            <br />
+            <p>
+              <strong>Gênero:</strong> Fantasia - Art
+            </p>
+
+            <p>
+              <strong>Formato:</strong> Digital
+            </p>
+            <p>
+              <strong>Onde pode ser lido:</strong> Smartphones - Tablets - Computadores - Leitores
+              de eBook (como Kindle e Kobo, desde que suportem o formato PDF)
+            </p>
+
+            <br />
+            {/* ESTE abre em NOVA ABA (Hotmart) */}
+            {/* <TransparentButton
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Em Breve
+            </TransparentButton> */}
+            <TransparentButton
+              href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-artbook-formato-digital/E105733274A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              Comprar
+            </TransparentButton>
+          </div>
         </div>
 
         <style>{`
@@ -413,7 +541,7 @@ export default function Index() {
         `}</style>
       </section>
       <section
-        id="showcase-block"
+        id="soundtrack-block"
         style={{
           marginTop: 40,
           backgroundColor: '#ffffff',
@@ -424,8 +552,8 @@ export default function Index() {
         }}
       >
         <div
-          id="song"
-          className="showcase-grid"
+          id="soundtrack-grid"
+          className="soundtrack-grid"
           style={{
             maxWidth: 1200,
             margin: '0 auto',
@@ -436,11 +564,11 @@ export default function Index() {
             alignItems: 'center',
           }}
         >
-          <div className="showcase-imageBox">
-            <img src="/images/song.png" alt="2012–2019" className="showcase-image" />
+          <div className="soundtrack-imageBox">
+            <img src="/images/song.png" alt="2012–2019" className="soundtrack-image" />
           </div>
 
-          <div className="showcase-text">
+          <div className="soundtrack-text">
             <h2>
               Trilha sonora <span className="highlight">do livro</span>
             </h2>
@@ -453,48 +581,51 @@ export default function Index() {
               jornada como nunca antes!
             </p>
             <FancyButton href="https://music.youtube.com/playlist?list=PLx8pfCgphZXmLTHzG78blHcLobHQCz385">
-              {' '}
               Ouça agora
             </FancyButton>
           </div>
         </div>
 
         <style>{`
-    #showcase-block .showcase-imageBox{
-      background:#fff;
-      border-radius:24px;
-      overflow:hidden;
-      display:flex;
-      justify-content:center;
-      align-items:center;
+    /* Estilos exclusivos para o bloco da trilha sonora */
+    #soundtrack-block .soundtrack-imageBox {
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    /* menor e responsiva */
-    #showcase-block .showcase-image{
-      width:70%;
-      max-width:420px;
-      height:auto;
-      display:block;
-      margin:0 auto;
+    
+    #soundtrack-block .soundtrack-image {
+      width: 70%;
+      max-width: 420px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
-    #showcase-block .showcase-text{
-      max-width:640px;
-      margin:0 auto 0 0;
-      text-align:left;
+    
+    #soundtrack-block .soundtrack-text {
+      max-width: 640px;
+      margin: 0 auto 0 0;
+      text-align: left;
     }
-    @media (max-width:1024px){
-      #showcase-block .showcase-grid{
-        grid-template-columns:1fr !important;
-        gap:32px;
+    
+    @media (max-width: 1024px) {
+      #soundtrack-block .soundtrack-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px;
       }
-      #showcase-block .showcase-image{
-        width:70%;
-        max-width:360px;
+      #soundtrack-block .soundtrack-image {
+        width: 70%;
+        max-width: 360px;
       }
     }
-    @media (max-width:640px){
-      #showcase-block .showcase-image{
-        width:80%;
-        max-width:260px;
+    
+    @media (max-width: 640px) {
+      #soundtrack-block .soundtrack-image {
+        width: 80%;
+        max-width: 260px;
       }
     }
   `}</style>
@@ -550,16 +681,6 @@ export default function Index() {
             devora não só vidas, mas também esperanças.
           </p>{' '}
           <br />
-          <TransparentButton
-            href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-edicao-especial/J101496902F"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pré-venda
-          </TransparentButton>
-          <p>
-            Aproveite a pré-venda com o cupom: <strong>NOAH20</strong>{' '}
-          </p>
           <div
             style={{
               paddingLeft: '50px',
@@ -598,94 +719,111 @@ export default function Index() {
           </div>
         </div>
       </section>
-      {/* FORMULÁRIO DE DOWNLOAD */}
       <section
-        id="form"
+        id="showcase-block"
         style={{
-          background: '#ffffffff',
-          color: '#000000ff',
-          padding: '60px 20px',
-          textAlign: 'center',
+          marginTop: 40,
+          backgroundColor: '#ffffff',
+          padding: '40px 0',
+          width: '100%',
+          // Removido o marginLeft/Right que quebravam o layout da página
         }}
       >
-        <h2 style={{ marginBottom: '20px' }}>
-          Leia o <span className="highlight">primeiro capítulo</span>
-        </h2>
-
-        {!submitted ? (
-          <form
-            onSubmit={handleSubmit}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '14px',
-              maxWidth: '400px',
-              margin: '0 auto',
-            }}
-          >
-            <input
-              type="text"
-              name="nome"
-              placeholder="Seu nome"
-              value={data.nome}
-              onChange={handleChange}
-              required
-              style={{
-                padding: '10px',
-                borderRadius: '8px',
-                border: '1px solid #638CA6',
-                width: '100%',
-              }}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Seu e-mail"
-              value={data.email}
-              onChange={handleChange}
-              required
-              style={{
-                padding: '10px',
-                borderRadius: '8px',
-                border: '1px solid #638CA6',
-                width: '100%',
-              }}
-            />
-            <div style={{ marginTop: '16px' }}>
-              <button
-                type="submit"
-                style={{
-                  background: '#638CA6',
-                  color: '#ffffff',
-                  border: 'none',
-                  borderRadius: '8px',
-                  padding: '12px 24px',
-                  fontSize: '16px',
-                  cursor: 'pointer',
-                }}
-              >
-                Enviar
-              </button>
+        <div
+          id="song"
+          className="showcase-grid"
+          style={{
+            maxWidth: 1000,
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: 32,
+            alignItems: 'center',
+          }}
+        >
+          {/* Primeiro item */}
+          <div className="showcase-item">
+            <div className="showcase-imageBox">
+              <img src="/images/capa56.png" alt="2012–2019" className="showcase-image" />
             </div>
-          </form>
-        ) : (
-          <div style={{ textAlign: 'center' }}>
-            <p
-              style={{
-                color: 'green',
-                fontWeight: 'bold',
-                fontSize: '18px',
-                marginBottom: '20px',
-              }}
-            >
-              ✅ Capítulo liberado com sucesso!
-            </p>
-            <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
-              Começar leitura
-            </FancyButton>
+            <div className="showcase-text">
+              <h3>
+                ArtBook <span className="highlight">Noah e o Senhor das Almas </span>
+              </h3>
+              <p>
+                O ArtBook de Noah e o Senhor das Almas é uma coletânea visual que documenta todo o
+                processo criativo por trás do livro. Ele reúne desde os primeiros esboços...
+              </p>
+              <FancyButton href="/artbookNoah">SAIBA MAIS</FancyButton>
+            </div>
           </div>
-        )}
+
+          {/* Segundo item */}
+          <div className="showcase-item">
+            <div className="showcase-imageBox">
+              <img src="/images/livro2.png" alt="2012–2019" className="showcase-image" />
+            </div>
+            <div className="showcase-text">
+              <h3>
+                The <span className="highlight"> art BOOK</span>
+              </h3>
+              <p>
+                Coletânea visual que explora a criatividade do artista por meio de ilustrações
+                únicas, fanarts marcantes e criações autorais inspiradas por temas diversos....
+              </p>
+              <FancyButton href="/art">SAIBA MAIS</FancyButton>
+            </div>
+          </div>
+        </div>
+
+        <style>{`
+    /* Todos os estilos são escopados pelo ID #showcase-block */
+    #showcase-block .showcase-item {
+      background: #f9f9f9;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    #showcase-block .showcase-imageBox {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    #showcase-block .showcase-image {
+      width: 60%;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    #showcase-block .showcase-text {
+      text-align: center;
+    }
+    #showcase-block .showcase-text h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+    #showcase-block .showcase-text p {
+      font-size: 0.85rem;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 768px) {
+      #showcase-block .showcase-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px;
+      }
+      #showcase-block .showcase-image {
+        width: 50%;
+        max-width: 150px;
+      }
+    }
+  `}</style>
       </section>
       <Footer />
     </>

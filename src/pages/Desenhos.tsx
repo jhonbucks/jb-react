@@ -11,6 +11,10 @@ import HeroBanner from '../components/HeroBanner';
 
 export default function Index() {
   const conceptImages = [
+    { src: '/images/0256.png', alt: 'Arte 1' },
+    { src: '/images/0257.png', alt: 'Arte 2' },
+    { src: '/images/0258.png', alt: 'Arte 3' },
+    { src: '/images/0259.png', alt: 'Arte 4' },
     { src: '/images/meu12.jpg', alt: 'Arte 1' },
     { src: '/images/meu13.jpg', alt: 'Arte 2' },
     { src: '/images/meu7.png', alt: 'Arte 3' },

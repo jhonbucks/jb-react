@@ -16,17 +16,35 @@ export default function Index() {
   return (
     <>
       <Navbar />
-
       {/* <Hero /> */}
       <BannerImageCTAFullAnimate
-        src="/images/imgfundo0.png"
-        href="#"
-        buttonText="Ver detalhes"
+        src="/images/oficial00.gif"
+        href="/ArtbookNoah"
+        buttonText="Saiba mais"
         alt="Banner Noah"
-        animationDurationMs={12000}
-        pauseOnHover={true}
-      />
-
+      />{' '}
+      <br />
+      <section style={{ margin: 0, padding: 0 }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <div
+            style={{
+              margin: '0 auto',
+              width: '100%',
+              maxWidth: 1920,
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <BannerImageCTAFull
+              src="/images/noakpag1.png"
+              href="/Noah"
+              buttonText="Ver detalhes"
+              alt="Banner Noah"
+            />
+          </div>
+        </div>
+      </section>{' '}
+      <br />
       <section style={{ margin: 0, padding: 0 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div
@@ -47,8 +65,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      <section style={{ margin: 0, padding: 0 }}>
+      {/* <section style={{ margin: 0, padding: 0 }}>
         <CareerSection
           leftImages={['/images/meu20.jpg', '/images/meu10.jpg']}
           rightImage="/images/menina.png"
@@ -57,8 +74,8 @@ export default function Index() {
           href="/sobre"
           buttonText="Saiba mais"
         />
-      </section>
-
+      </section> */}
+      <br />
       <Footer />
     </>
   );
