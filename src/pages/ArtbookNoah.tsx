@@ -239,10 +239,10 @@ export default function Index() {
             <h2>Livro digital</h2>
             <br />
             <p>
-              <strong>Gênero:</strong> Art - Design
+              <strong>Gênero:</strong> Art
             </p>
             <p>
-              <strong>Páginas:</strong> 34
+              <strong>Páginas:</strong> 53
             </p>
             <p>
               <strong>Formato:</strong> Digital
@@ -295,6 +295,99 @@ export default function Index() {
           }
         `}</style>
       </section>
+
+      <section
+        id="insp-block"
+        style={{
+          marginTop: 0,
+          backgroundImage: "url('/images/fundopagart.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          padding: '80px 0',
+          width: '100vw',
+          marginLeft: 'calc(50% - 50vw)',
+          marginRight: 'calc(50% - 50vw)',
+        }}
+      >
+        <div
+          className="insp-grid"
+          style={{
+            maxWidth: 1200,
+            margin: '0 auto',
+            padding: '0 24px',
+            display: 'grid',
+            gridTemplateColumns: '1.1fr 1fr',
+            gap: 48,
+            alignItems: 'center',
+          }}
+        >
+          <div className="insp-imageBox">
+            <img src="/images/capaart.png" alt="Livro digital" className="insp-image" />
+          </div>
+
+          <div id="digital" className="insp-text">
+            <h2>Livro físico</h2>
+            <br />
+            <p>
+              <strong>Gênero:</strong> Art
+            </p>
+            <p>
+              <strong>Páginas:</strong> 53
+            </p>
+            <p>
+              <strong>Formato:</strong> Físico
+            </p>
+            <p>
+              Muito mais que um livro, Artbook Noah e o Senhor das Almas é um portal para a
+              imaginação. Livro impresso em Papel Couchê, 90g/m² colorido, no tamanho 15x21cm com 53
+              páginas.
+            </p>
+            <br />
+            <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-artbook-noah-e-o-senhor-das-almas-bpenv/V105854810M">
+              Comprar
+            </FancyButton>
+          </div>
+        </div>
+
+        <style>{`
+          #insp-block .insp-imageBox{
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #insp-block .insp-image{
+            width: 70%;
+            max-width: 380px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+          }
+          #insp-block .insp-text{
+            max-width: 640px;
+            margin: 0 auto 0 0;
+            text-align: left;
+          }
+          /* texto branco nesta seção */
+          #insp-block .insp-text h2,
+          #insp-block .insp-text p{
+            color: #020202ff !important;
+          }
+          @media (max-width: 1024px){
+            #insp-block .insp-grid{
+              grid-template-columns: 1fr !important;
+              gap: 32px;
+            }
+            #insp-block .insp-image{ width: 65%; max-width: 320px; }
+          }
+          @media (max-width: 640px){
+            #insp-block .insp-image{ width: 80%; max-width: 260px; }
+          }
+        `}</style>
+      </section>
+
       <section
         id="insp-block"
         style={{
