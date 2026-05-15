@@ -239,15 +239,18 @@ export default function Index() {
               <div style={{ textAlign: 'center' }}>
                 <p
                   style={{
-                    color: 'green',
+                    color: '#638CA6',
                     fontWeight: 'bold',
                     fontSize: '18px',
                     marginBottom: '20px',
                   }}
                 >
-                  ✅ Capítulo liberado com sucesso!
+                  Capítulo liberado com sucesso!
                 </p>
-                <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
+                <FancyButton
+                  href="https://drive.google.com/file/d/1DBQ5kUlfDQjvPSPlUHinKGRK-PdaZal4/view?usp=sharing
+"
+                >
                   Começar leitura
                 </FancyButton>
               </div>

@@ -184,16 +184,19 @@ export default function Index() {
               <div style={{ textAlign: 'center' }}>
                 <p
                   style={{
-                    color: 'green',
+                    color: '#638CA6',
                     fontWeight: 'bold',
                     fontSize: '18px',
                     marginBottom: '20px',
                   }}
                 >
-                  Capítulo liberado com sucesso!
+                  Liberado com sucesso! Aproveite.
                 </p>
-                <FancyButton href="https://drive.google.com/file/d/1kr-_X2WETjBjiJS-amLBV50juQVXy1cb/view?usp=sharing">
-                  Começar leitura
+                <FancyButton
+                  href="https://drive.google.com/file/d/1I3s6qOxYq05PMIsqF5uQeUZ2ZqE_vWbx/view?usp=sharing
+"
+                >
+                  Acessar conteúdo
                 </FancyButton>
               </div>
             )}
@@ -250,7 +253,7 @@ export default function Index() {
             </p>
             <br />
             <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/artbook-noah-e-o-senhor-das-almas/U105732964T">
-              Comprar agora
+              Comprar
             </FancyButton>
           </div>
         </div>
@@ -338,7 +341,7 @@ export default function Index() {
             </p>
             <br />
             <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/noah-e-o-senhor-das-almas-artbook-formato-digital/E105733274A">
-              Comprar agora
+              Comprar
             </FancyButton>
           </div>
         </div>
@@ -420,7 +423,7 @@ export default function Index() {
             }}
           >
             <FancyButton href="https://hotmart.com/pt-br/marketplace/produtos/artbook-noah-e-o-senhor-das-almas/U105732964T">
-              Comprar agora
+              Comprar
             </FancyButton>{' '}
             <style>{`
           /* cSpell:words fbtn btns */

@@ -202,16 +202,20 @@ export default function FormArtbookNoah() {
               <div style={{ textAlign: 'center' }}>
                 <p
                   style={{
-                    color: 'green',
+                    color: '#d7e8f3',
                     fontWeight: 'bold',
                     fontSize: '18px',
                     marginBottom: '20px',
                   }}
                 >
-                  Liberado com sucesso, aproveite!
+                  Liberado com sucesso! Aproveite.
                 </p>
-                <FancyButton href="https://drive.google.com/file/d/1kr-_X2WETjBjiJS-amLBV50juQVXy1cb/view?usp=sharing">
-                  Ler agora
+                <FancyButton
+                  href="https://drive.google.com/file/d/11xbrfT0j2e1NhMFtV0a-nt_zBUddWqMw/view?usp=sharing
+
+"
+                >
+                  Acessar conteúdo
                 </FancyButton>
               </div>
             )}
