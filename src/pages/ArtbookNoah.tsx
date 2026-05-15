@@ -192,7 +192,7 @@ export default function Index() {
                 >
                   Capítulo liberado com sucesso!
                 </p>
-                <FancyButton href="https://drive.google.com/file/d/1NK3mtxdwrhPL8vTelRG1HPYYAEmhw0ot/view?usp=sharing">
+                <FancyButton href="https://drive.google.com/file/d/1kr-_X2WETjBjiJS-amLBV50juQVXy1cb/view?usp=sharing">
                   Começar leitura
                 </FancyButton>
               </div>
