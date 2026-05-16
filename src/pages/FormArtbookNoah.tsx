@@ -118,7 +118,7 @@ export default function FormArtbookNoah() {
                 color: '#ffffff',
               }}
             >
-              Veja uma previa do ArtBook
+              Veja uma prévia do ArtBook
             </h2>
             <p
               style={{
@@ -126,7 +126,7 @@ export default function FormArtbookNoah() {
                 fontSize: '1.1rem',
               }}
             >
-              Previa limitada: Voce recebe o primeiro capitulo do livro "Noah e o Senhor das Almas"
+              Prévia limitada: Voce recebe o primeiro capitulo do livro "Noah e o Senhor das Almas"
               + ilustracoes exclusivas do ArtBook + Cupom de desconto de 20% no dia do lancamento.
             </p>
 
