@@ -18,7 +18,8 @@ export default function Index() {
       <Navbar />
       {/* <Hero /> */}
       <BannerImageCTAFullAnimate
-        src="/images/oficial00.gif"
+        src="/images/noahart1106.gif"
+        // src="/images/noahart1106.gif"
         href="/formartbook"
         buttonText="Pré-venda"
         alt="Banner Noah"
