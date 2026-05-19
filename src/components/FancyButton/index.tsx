@@ -8,6 +8,7 @@ type Props = {
   href: string;
   children: React.ReactNode;
   variant?: "secondary" | "default"; // AGORA OPCIONAL
+  size?: "default" | "small";
   block?: boolean;
   radius?: number;
 };
@@ -16,6 +17,7 @@ export default function FancyButton({
   href,
   children,
   variant = "default",
+  size = "default",
   block = false,
   radius = 10,
 }: Props) {
@@ -23,6 +25,7 @@ export default function FancyButton({
   const cls = [
     styles?.fbtn ?? "fbtn",
     variant === "secondary" ? styles?.secondary ?? "secondary" : "",
+    size === "small" ? styles?.small ?? "small" : "",
     block ? styles?.block ?? "block" : "",
   ]
     .filter(Boolean)

@@ -56,7 +56,9 @@ export default function BannerImageCTAFullAnimate({
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        <FancyButton href={href}>{buttonText}</FancyButton>
+        <FancyButton href={href} size="small" radius={8}>
+          {buttonText}
+        </FancyButton>
       </div>
     </div>
   );

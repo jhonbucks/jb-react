@@ -40,6 +40,12 @@
 	width: 100%;
 }
 
+.fbtn.small {
+	padding: 8px 18px;
+	font-size: 0.82rem;
+	letter-spacing: 0.05em;
+}
+
 .fbtn.secondary {
 	--bg: #A7C3D4;
 	--bg-hover: #89AFC1;
