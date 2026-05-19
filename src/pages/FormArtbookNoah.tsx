@@ -127,7 +127,7 @@ export default function FormArtbookNoah() {
               }}
             >
               Prévia limitada: Voce recebe o primeiro capitulo do livro "Noah e o Senhor das Almas"
-              + ilustracoes exclusivas do ArtBook + Cupom de desconto de 20% no dia do lancamento.
+              + ilustrações exclusivas do ArtBook + Cupom de desconto de 20% no dia do lançamento.
             </p>
 
             <p
