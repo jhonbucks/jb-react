@@ -110,6 +110,56 @@ export default function Livros() {
         <section className={styles.products} aria-label="Livros">
           <article className={styles.product}>
             <div className={styles.imageBox}>
+              <img src="/images/ecobagnoah.png" alt="Ecobag Tartaruga Ancestral" />
+            </div>
+
+            <div className={styles.productInfo}>
+              <h1>
+                Ecobag<span className="highlight"> Artbook Noah </span>
+              </h1>
+              <br />
+              <p>
+                {' '}
+                Ecobag oficial e exclusiva do artbook "Noah e o Senhor das Almas", do ilustrador e
+                quadrinista Jhon Bucks. Estampada com a arte da capa do livro, esta ecobag ...
+              </p>
+              <p> ♻️ Ecobag sustentável</p>
+              <div className={styles.actions}>
+                <FancyButton href="https://umapenca.com/jhonbucks/ecobag/artbook-noah-e-o-senhor-das-almas-366384.html">
+                  Comprar
+                </FancyButton>
+              </div>
+            </div>
+          </article>
+
+          <article className={styles.product}>
+            <div className={styles.imageBox}>
+              <img src="/images/camisetajb.png" alt="Pôster Noite de Devaneios" />
+            </div>
+
+            <div className={styles.productInfo}>
+              <h1>
+                Camiseta<span className="highlight"> Jhon Bucks</span>
+              </h1>
+              <br />
+              <p>
+                Camiseta oficial da marca Jhon Bucks, estampada com a logo do pássaro estilizado –
+                símbolo que acompanha a evolução visual do artista desde 2012 até os dias ....
+              </p>
+              <p>
+                ✅ 100% algodão <br />✅ Disponível em tamanhos P ao GG
+              </p>
+
+              <div className={styles.actions}>
+                <FancyButton href="https://umapenca.com/jhonbucks/camiseta/logo-jhon-bucks-passaro-estilizado-366382.html">
+                  Comprar
+                </FancyButton>
+              </div>
+            </div>
+          </article>
+
+          <article className={styles.product}>
+            <div className={styles.imageBox}>
               <img src="/images/ecobag.png" alt="Ecobag Tartaruga Ancestral" />
             </div>
 
