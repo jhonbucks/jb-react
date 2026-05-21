@@ -110,7 +110,7 @@ export default function Livros() {
         <section className={styles.products} aria-label="Livros">
           <article className={styles.product}>
             <div className={styles.imageBox}>
-              <img src="/images/ecobagnoah.png" alt="Ecobag Tartaruga Ancestral" />
+              <img src="/images/noaharte568.png" alt="Ecobag Tartaruga Ancestral" />
             </div>
 
             <div className={styles.productInfo}>
@@ -134,7 +134,7 @@ export default function Livros() {
 
           <article className={styles.product}>
             <div className={styles.imageBox}>
-              <img src="/images/camisetajb.png" alt="Pôster Noite de Devaneios" />
+              <img src="/images/camiseta0254796.png" alt="Pôster Noite de Devaneios" />
             </div>
 
             <div className={styles.productInfo}>
@@ -160,7 +160,7 @@ export default function Livros() {
 
           <article className={styles.product}>
             <div className={styles.imageBox}>
-              <img src="/images/ecobag.png" alt="Ecobag Tartaruga Ancestral" />
+              <img src="/images/tartuuu.png" alt="Ecobag Tartaruga Ancestral" />
             </div>
 
             <div className={styles.productInfo}>
@@ -184,7 +184,7 @@ export default function Livros() {
 
           <article className={styles.product}>
             <div className={styles.imageBox}>
-              <img src="/images/postermenina.png" alt="Pôster Noite de Devaneios" />
+              <img src="/images/novoposter56.png" alt="Pôster Noite de Devaneios" />
             </div>
 
             <div className={styles.productInfo}>
