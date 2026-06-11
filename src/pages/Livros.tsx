@@ -40,7 +40,7 @@ export default function Livros() {
                 <FancyButton href="/artbookNoah" variant="secondary">
                   Saiba mais
                 </FancyButton> */}
-                <FancyButton href="/formartbook">Pré-venda</FancyButton>
+                <FancyButton href="/artbooknoah">Comprar</FancyButton>
               </div>
             </div>
           </article>

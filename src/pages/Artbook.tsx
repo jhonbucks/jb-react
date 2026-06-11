@@ -438,7 +438,7 @@ export default function Index() {
                 O ArtBook de Noah e o Senhor das Almas é uma coletânea visual que documenta todo o
                 processo criativo por trás do livro. Ele reúne desde os primeiros esboços...
               </p>
-              <FancyButton href="/formartbook">Pré-venda</FancyButton>
+              <FancyButton href="/artbooknoah">saiba mais</FancyButton>
             </div>
           </div>
 

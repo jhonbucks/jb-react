@@ -20,8 +20,8 @@ export default function Index() {
       <BannerImageCTAFullAnimate
         src="/images/noahart1106.gif"
         // src="/images/noahart1106.gif"
-        href="/formartbook"
-        buttonText="Pré-venda"
+        href="/artbooknoah"
+        buttonText="Saiba mais"
         alt="Banner Noah"
       />{' '}
       <br />
